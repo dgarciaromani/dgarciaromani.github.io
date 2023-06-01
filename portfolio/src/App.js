@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { createTheme } from "@mui/material/styles";
-import logo from './logo.svg';
 import './App.css';
 
 import NavBar from './components/NavBar';
+import ScrollButton from './components/ScrollButton';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import Projects from './pages/Projects';
@@ -14,8 +14,8 @@ import Contact from './pages/Contact';
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#263238',
-      contrastText: '#fff',
+      main: '#263238', // NavBar background color
+      contrastText: '#fff', // NavBar text color
     },
   },
   components: {
@@ -48,6 +48,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
+      <ScrollButton />
       <Footer />
     </ThemeProvider>
   );

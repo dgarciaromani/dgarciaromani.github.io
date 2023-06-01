@@ -20,6 +20,7 @@ export default function StickyFooter() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
+        minHeight: '100vh',
       }}>
       <CssBaseline />
       <Box
@@ -28,14 +29,15 @@ export default function StickyFooter() {
           py: 3,
           px: 2,
           backgroundColor: '#b0bec5',
+          marginTop: 'auto',
           bottom: 0,
           width: '100%',
           borderTop: 0,
         }}>
 
-        <Container maxWidth="sm">
+        <Container maxWidth="sm" sx={{ textAlign: 'center' }}>
           <Typography variant="body1">
-            by Daniela Garcia
+            Coded and designed by Daniela Garcia
           </Typography>
           <Copyright />
         </Container>
