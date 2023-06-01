@@ -1,14 +1,16 @@
 import { AppBar, Container, Toolbar, Typography } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
-import style from './style.module.css';
+import style from './styleComponents.module.css';
 
 const NavText = ({ href, text }) => {
     return (
         <Typography
             variant= 'h6'
             noWrap
-            className = {style.navText}>
+            style={{
+                fontFamily: "'Barlow', sans-serif"
+            }}>
             <NavLink
                 to={href}
                 className = {style.navLink}>
@@ -21,29 +23,31 @@ const NavText = ({ href, text }) => {
 export default function NavBar() {
     return (
         <AppBar position='sticky'>
-        <Container maxWidth='xl'>
-            <Toolbar disableGutters style={{ display: 'flex' }}>
-                <Container style={{ flex: 1, whiteSpace: 'nowrap' }}>
-                    <TypeAnimation
-                        sequence={[
-                            'Developer =', 500,
-                            'Developer = Daniela Garcia;', 500,
-                            '', 500,
-                        ]}
-                        speed={50}
-                        cursor={true}
-                        repeat={Infinity}
-                        deletionSpeed={40}
-                        className = {style.typeAnimation}
-                    />
-                </Container>       
-                <Container style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                    <NavText href='#projects' text='Projects' />
-                    <NavText href='#about' text='About' />
-                    <NavText href='#contact' text='Contact' />
-                </Container>
-            </Toolbar>
-        </Container>
+            <Container maxWidth='xl'>
+                <Toolbar disableGutters style={{ display: 'flex' }}>
+                    <Container style={{ flex: 1, whiteSpace: 'nowrap' }}>
+                        <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <TypeAnimation
+                                sequence={[
+                                    'Daniela Garcia', 3000,
+                                    'Software Engineer', 2000,                                
+                                    '', 500,
+                                ]}
+                                speed={50}
+                                cursor={true}
+                                repeat={Infinity}
+                                deletionSpeed={40}
+                                className = {style.typeAnimation}
+                            />
+                        </a>
+                    </Container>       
+                    <Container style={{ display: 'flex', justifyContent: 'flex-end' }}>
+                        <NavText href='/about' text='About' />
+                        <NavText href='/projects' text='Projects' />
+                        <NavText href='/contact' text='Contact' />
+                    </Container>
+                </Toolbar>
+            </Container>
         </AppBar>
     );
 }

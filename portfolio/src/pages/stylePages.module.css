@@ -1,0 +1,28 @@
+/* HomePage */
+.cover {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1))/*, url(path/to/homepage.jpg)*/;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h1Cover {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    font-family: Alumni Sans;
+}
+
+.pCover {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px #000000;
+    font-family: Barlow;
+}

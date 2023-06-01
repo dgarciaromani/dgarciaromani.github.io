@@ -23,12 +23,10 @@ export const theme = createTheme({
       defaultProps: {
         sx: {
           margin: '10px',
-          backgroundColor: '#ff7961',
+          //backgroundColor: '#ff7961',
           textTransform: 'none',
           fontFamily: 'Barlow',
           fontWeight: 'bold',
-          width: '200px',
-          height: '50px',
         },
       },
     },
@@ -43,8 +41,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />          
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>

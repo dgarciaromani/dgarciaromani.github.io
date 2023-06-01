@@ -9,7 +9,6 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary">
       {'Copyright © '}
       {new Date().getFullYear()}
-      {'.'}
     </Typography>
   );
 }
@@ -20,16 +19,15 @@ export default function StickyFooter() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100vh',
       }}>
-      <CssBaseline />
+        <CssBaseline />
       <Box
         component="footer"
         sx={{
           py: 3,
           px: 2,
           backgroundColor: '#b0bec5',
-          marginTop: 'auto',
+          marginTop: '0',
           bottom: 0,
           width: '100%',
           borderTop: 0,

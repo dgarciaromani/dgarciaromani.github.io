@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import style from './style.module.css';
+import style from './styleComponents.module.css';
   
 export default function ScrollButton() {
     const [showButton, setShowButton] = useState(false);
