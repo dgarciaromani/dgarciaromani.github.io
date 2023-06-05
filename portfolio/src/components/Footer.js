@@ -6,14 +6,14 @@ import Container from '@mui/material/Container';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography variant="body2" color="white">
       {'Copyright © '}
       {new Date().getFullYear()}
     </Typography>
   );
-}
+  }
 
-export default function StickyFooter() {
+  export default function StickyFooter() {
   return (
     <Box
       sx={{
@@ -26,7 +26,8 @@ export default function StickyFooter() {
         sx={{
           py: 3,
           px: 2,
-          backgroundColor: '#b0bec5',
+          backgroundColor: '#263238',
+          
           marginTop: '0',
           bottom: 0,
           width: '100%',
@@ -34,7 +35,21 @@ export default function StickyFooter() {
         }}>
 
         <Container maxWidth="sm" sx={{ textAlign: 'center' }}>
-          <Typography variant="body1">
+          <Container sx={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '20px', marginBottom: '20px' }}>
+            <a href="mailto:dngarcia@seas.upenn.edu" target="_blank">
+              <img src={require("../images/mail_icon.png")} alt="Mail" width="50px" />
+            </a>
+            <a href="https://github.com/danielagarcia9" target="_blank">
+              <img src={require("../images/github_icon.png")} alt="Github" width="50px" />
+            </a>
+            <a href="https://www.linkedin.com/in/danielagarcia9/?locale=en_US" target="_blank">
+              <img src={require("../images/linkedin_icon.png")} alt="Linkedin" width="50px" />
+            </a>
+            <a href="https://steamcommunity.com/id/danielagarcia9/" target="_blank">
+              <img src={require("../images/steam_icon.png")} alt="Steam" width="50px" />
+            </a>
+          </Container>
+          <Typography variant="body1" color="white">
             Coded and designed by Daniela Garcia
           </Typography>
           <Copyright />

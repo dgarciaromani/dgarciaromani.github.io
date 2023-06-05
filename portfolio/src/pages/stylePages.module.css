@@ -4,6 +4,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    /*background-color: #263238;*/
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -25,4 +26,19 @@
     font-size: 20px;
     text-shadow: 2px 2px #000000;
     font-family: Barlow;
+}
+
+.expandIcon {
+    color: white;
+    transition: transform 0.3s;
+}
+  
+.expandIcon:hover {
+    transform: scale(1.2);
+    color: #263238;
+    font-weight: 700;
+}
+
+.coverIcon:hover {
+    transform: scale(1.2);
 }

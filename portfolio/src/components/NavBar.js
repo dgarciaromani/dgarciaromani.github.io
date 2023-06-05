@@ -1,9 +1,9 @@
-import { AppBar, Container, Toolbar, Typography } from '@mui/material';
+import { AppBar, Container, Toolbar, Typography, Box } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
 import style from './styleComponents.module.css';
 
-const NavText = ({ href, text }) => {
+const NavText = ({ href, text, onClick }) => {
     return (
         <Typography
             variant= 'h6'
@@ -13,8 +13,9 @@ const NavText = ({ href, text }) => {
             }}>
             <NavLink
                 to={href}
-                className = {style.navLink}>
-                {text}
+                className = {style.navLink}
+                onClick={onClick}>
+                {text}                
             </NavLink>
         </Typography>
     )
@@ -42,7 +43,7 @@ export default function NavBar() {
                         </a>
                     </Container>       
                     <Container style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                        <NavText href='/about' text='About' />
+                        <NavText href='/' text='About' />
                         <NavText href='/projects' text='Projects' />
                         <NavText href='/contact' text='Contact' />
                     </Container>

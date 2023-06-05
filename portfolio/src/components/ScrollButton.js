@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import style from './styleComponents.module.css';
+import ExpandLessIcon from '@mui/icons-material/ExpandLess';
   
 export default function ScrollButton() {
     const [showButton, setShowButton] = useState(false);
@@ -29,7 +30,7 @@ export default function ScrollButton() {
             style={{display: showButton ? 'inline' : 'none'}} 
             className = {style.scrollTopButton}
         >
-            <img src={require("../images/up.png")} alt="Up" width="30"></img>
+            <ExpandLessIcon sx={{ fontSize: 60, color: 'white' }}/>
         </button>
     );
 

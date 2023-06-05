@@ -1,10 +1,9 @@
-import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { Box, Container, Divider, Chip, Paper, Button  } from '@mui/material';
 import DoneIcon from '@mui/icons-material/Done';
 import { styled } from '@mui/material/styles';
 import style from './stylePages.module.css';
-import ProjectsCard from '../components/Cards';
+import ProjectsCard from '../components/ProjectsCards';
 import { PROJECTS, TAGS } from '../data/ProjectsInfo';
 
 const ListItem = styled('li')(({ theme }) => ({
@@ -13,41 +12,53 @@ const ListItem = styled('li')(({ theme }) => ({
   
 export default function Projects() {
     const [activeFilter, setActiveFilter] = useState([]);
+    const [activeFilterCount, setActiveFilterCount] = useState(0);
     const [showMe, setShowMe] = useState(false);
 
     useEffect(() => {
         initializeActiveFilter();
-      }, []);
+    }, []);
 
     const sortActiveFilter = (data) => {
         return data.sort((a, b) => a.label.localeCompare(b.label));
     };
 
-    const handleDelete = (chipToDelete) => () => {
-        setActiveFilter((chips) =>
-            chips.map((chip) =>
-            chip.key === chipToDelete.key ? { ...chip, active: false } : chip
+    const handleDelete = (tag) => () => {
+        setActiveFilter((activeFilter) =>
+            activeFilter.map((chip) =>
+            chip.key === tag.key ? { ...chip, active: false } : chip
             )
         );
+
+        const updatedFilterCount = activeFilterCount - 1;
+        setActiveFilterCount(updatedFilterCount);
+
+        if (updatedFilterCount === 0) {
+            setShowMe(false);
+        }
     };
 
-    const handleClick = (tag) => () => {
-        setActiveFilter((chips) =>
-          chips.map((chip) =>
-            chip.key === tag.key ? { ...chip, active: true } : chip
-          )
+    const handleAdd = (tag) => () => {
+        setActiveFilter((activeFilter) =>
+            activeFilter.map((chip) =>
+                chip.key === tag.key ? { ...chip, active: true } : chip
+            )
         );
+
+        const updatedFilterCount = activeFilterCount + 1;
+        setActiveFilterCount(updatedFilterCount);
         setShowMe(true);
     };
 
     const initializeActiveFilter = () => {
         const transformedData = Object.entries(TAGS).map(([key, label]) => ({
-          key: parseInt(key),
-          label,
-          active: false
+            key: parseInt(key),
+            label,
+            active: false
         }));
         const sortedData = sortActiveFilter(transformedData);
         setActiveFilter(sortedData);
+        setActiveFilterCount(0);
         setShowMe(false);
     };
 
@@ -65,8 +76,8 @@ export default function Projects() {
                 <h1>My Projects</h1>
                 <Divider />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Escribir sobre lenguajes, maybe ponerlos en grande or whatever</p>
             </Container>
+            
             <Container>
                 <Paper
                     sx={{
@@ -84,15 +95,15 @@ export default function Projects() {
                             <Chip
                                 label={value.label}
                                 variant={value.active ? "filled" : "outlined"}
-                                onDelete={value.active ? handleDelete(value) : handleClick(value)}
+                                onDelete={value.active ? handleDelete(value) : handleAdd(value)}
                                 color="primary"
                                 deleteIcon={value.active ? undefined :  <DoneIcon />}
                             />
                         </ListItem>
                     ))}
                     {showMe && <Container style={{ display: "flex", justifyContent: "center" }}>
-                        <Button variant="text" onClick={initializeActiveFilter}>
-                            Reset Filters
+                        <Button variant="text" onClick={initializeActiveFilter} sx={{backgroundColor: 'none'}}>
+                            RESET FILTERS
                         </Button>
                     </Container>}
                 </Paper>
