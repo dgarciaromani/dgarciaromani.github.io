@@ -1,6 +1,8 @@
 /* HomePage */
 .cover {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.1))/*, url(path/to/homepage.jpg)*/;
+    background-image: linear-gradient(rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.1))/*, 
+        url(../images/homepage.jpg)*/;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,21 +15,22 @@
 
 .h1Cover {
     text-align: center;
-    color: #FFFFFF;
+    color: white;
     font-size: 100px;
     font-weight: bold;
-    text-shadow: 2px 2px #000000;
-    font-family: Alumni Sans;
+    text-shadow: 1px 1px #000000;
+    font-family: 'Barlow', sans-serif;
 }
 
 .pCover {
     text-align: center;
     color: white;
     font-size: 20px;
-    text-shadow: 2px 2px #000000;
-    font-family: Barlow;
+    text-shadow: 1px 1px #000000;
+    font-family: 'Barlow', sans-serif;
 }
 
+/* Cover button down */
 .expandIcon {
     color: white;
     transition: transform 0.3s;
@@ -35,10 +38,11 @@
   
 .expandIcon:hover {
     transform: scale(1.2);
-    color: #263238;
+    color: #86c232;
     font-weight: 700;
 }
 
+/* Social buttons */
 .coverIcon:hover {
     transform: scale(1.2);
 }

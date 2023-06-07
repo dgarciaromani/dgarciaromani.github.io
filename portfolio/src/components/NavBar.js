@@ -1,7 +1,13 @@
-import { AppBar, Container, Toolbar, Typography, Box } from '@mui/material';
+import React, { useState, useEffect } from 'react';
+import { AppBar, Container, Toolbar, Typography, Menu, MenuItem, IconButton, ListItemIcon } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
 import style from './styleComponents.module.css';
+import LunchDiningIcon from '@mui/icons-material/LunchDining';
+import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import DragHandleIcon from '@mui/icons-material/DragHandle';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 const NavText = ({ href, text, onClick }) => {
     return (
@@ -22,30 +28,114 @@ const NavText = ({ href, text, onClick }) => {
 }
 
 export default function NavBar() {
+    const [anchorEl, setAnchorEl] = useState(null);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+    const [menuIcon, setMenuIcon] = useState(<LunchDiningIcon sx={{ fontSize: 40 }} />);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 700);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+        window.removeEventListener('resize', handleResize);
+    };
+    }, []);
+
+    const open = Boolean(anchorEl);
+
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+        setMenuIcon(<LocalDiningIcon sx={{ fontSize: 40 }} />);
+    };
+
+    const handleClose = () => {
+        setAnchorEl(null);
+        setMenuIcon(<LunchDiningIcon sx={{ fontSize: 40 }} />);
+    };
+
     return (
-        <AppBar position='sticky'>
+        <AppBar position='sticky' sx={{ boxShadow: 'none' }}>
             <Container maxWidth='xl'>
                 <Toolbar disableGutters style={{ display: 'flex' }}>
                     <Container style={{ flex: 1, whiteSpace: 'nowrap' }}>
-                        <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-                            <TypeAnimation
-                                sequence={[
-                                    'Daniela Garcia', 3000,
-                                    'Software Engineer', 2000,                                
-                                    '', 500,
-                                ]}
-                                speed={50}
-                                cursor={true}
-                                repeat={Infinity}
-                                deletionSpeed={40}
-                                className = {style.typeAnimation}
-                            />
-                        </a>
-                    </Container>       
+                        {isMobile ? (
+                            <a href="/" style={{ textDecoration: 'none', color: 'inherit', fontSize: '10px'  }}>
+                                <TypeAnimation
+                                    sequence={[
+                                        'Daniela Garcia', 3000,
+                                        'Software Engineer', 2000,                                
+                                        '', 500,
+                                    ]}
+                                    speed={50}
+                                    cursor={true}
+                                    repeat={Infinity}
+                                    deletionSpeed={40}
+                                    className = {style.typeAnimation}
+                                />
+                            </a>
+                        ) : (
+                            <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
+                                <TypeAnimation
+                                    sequence={[
+                                        'Daniela Garcia', 3000,
+                                        'Software Engineer', 2000,                                
+                                        '', 500,
+                                    ]}
+                                    speed={50}
+                                    cursor={true}
+                                    repeat={Infinity}
+                                    deletionSpeed={40}
+                                    className = {style.typeAnimation}
+                                />
+                            </a>
+                        )}
+                    </Container>  
+
                     <Container style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                        <NavText href='/' text='About' />
-                        <NavText href='/projects' text='Projects' />
-                        <NavText href='/contact' text='Contact' />
+                        {isMobile ? (
+                        <>
+                            <IconButton
+                                aria-controls="menu"
+                                aria-haspopup="true"
+                                onClick={handleClick}
+                                color="inherit"
+                            >
+                                {menuIcon}
+                            </IconButton>
+                            <Menu
+                                id="menu"
+                                anchorEl={anchorEl}
+                                keepMounted
+                                open={open}
+                                onClose={handleClose}
+                            >
+                                <MenuItem onClick={handleClose}>
+                                    <ListItemIcon>
+                                        <NavText href='/' text='About' onClick={handleClose} />
+                                    </ListItemIcon>
+                                </MenuItem>
+                                <MenuItem onClick={handleClose}>
+                                    <ListItemIcon>
+                                        <NavText href='/projects' text='Projects' onClick={handleClose} />
+                                    </ListItemIcon>
+                                </MenuItem>
+                                <MenuItem onClick={handleClose}>
+                                    <ListItemIcon>
+                                        <NavText href='/contact' text='Contact' onClick={handleClose} />
+                                    </ListItemIcon>
+                                </MenuItem>
+                            </Menu>
+                        </>
+                        ) : (
+                        <>
+                            <NavText href='/' text='About' />
+                            <NavText href='/projects' text='Projects' />
+                            <NavText href='/contact' text='Contact' />
+                        </>
+                        )}
                     </Container>
                 </Toolbar>
             </Container>

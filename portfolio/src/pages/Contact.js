@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Typography, Box, Button, Grid, TextField, Divider } from '@mui/material';
+import { Container, Box, Button, Grid, TextField, Divider } from '@mui/material';
 
 export default function Contact() {
     const [name, setName] = React.useState("");

@@ -3,6 +3,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
+import { useTheme } from '@mui/material/styles';
 
 function Copyright() {
   return (
@@ -13,7 +14,10 @@ function Copyright() {
   );
   }
 
-  export default function StickyFooter() {
+export default function StickyFooter() {
+  const theme = useTheme();
+  const customColor = theme.palette.customColor.main;
+
   return (
     <Box
       sx={{
@@ -26,7 +30,7 @@ function Copyright() {
         sx={{
           py: 3,
           px: 2,
-          backgroundColor: '#263238',
+          backgroundColor: customColor,
           
           marginTop: '0',
           bottom: 0,

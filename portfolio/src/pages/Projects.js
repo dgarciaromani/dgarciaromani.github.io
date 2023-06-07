@@ -8,7 +8,7 @@ import { PROJECTS, TAGS } from '../data/ProjectsInfo';
 
 const ListItem = styled('li')(({ theme }) => ({
     margin: theme.spacing(0.5),
-  }));
+}));
   
 export default function Projects() {
     const [activeFilter, setActiveFilter] = useState([]);
@@ -87,6 +87,9 @@ export default function Projects() {
                         listStyle: 'none',
                         p: 0.5,
                         m: 0,
+                        boxShadow: 'none',
+                        border: 'none',
+                        background: 'transparent',
                     }}
                     component="ul"
                     >

@@ -33,7 +33,7 @@ export default function HomePage() {
                             sequence={[
                                 'and I am a Software Engineer', 3000,
                                 'and I am a Organizational Psychologist', 3000,
-                                'and I am a Designer', 3000,     
+                                'and I am a UX/UI Designer', 3000,     
                                 'and I am a Photographer', 3000,
                             ]}
                             speed={50}
@@ -74,7 +74,7 @@ export default function HomePage() {
                     sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', order: { xs: 2, md: 1 }}}>
                     <Container>
                         <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-                            <h2>About me</h2>
+                            <h1>About me</h1>
                             <Divider />
                         </Grid>
                         <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'left' }}>
@@ -118,68 +118,80 @@ export default function HomePage() {
         </Container>
 
         <Container sx={{ paddingBottom: '20px'}}>
-            <Grid container spacing={1}>
+            <Grid container spacing={2}>
                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
                     <Container>
-                        <h2>Skills</h2>
+                        <h1>Skills</h1>
                         <Divider />
                     </Container> 
                 </Grid>
             </Grid>
 
-            <Grid container spacing={3}>
-                <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'left' }}>
+            <Grid container spacing={2}>
+                <Grid item xs={12} sm={6} md={4}>
                     <Container>
-                        <h4>Programming languages: </h4>
-                        <i className="devicon-c-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-java-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-javascript-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-python-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        <h4 style={{ textAlign: 'center' }}>Programming languages: </h4>
+                        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <i className="devicon-c-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-java-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-javascript-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-python-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        </Container>
                     </Container>
                 </Grid>
 
-                <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'left' }}>
+                <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Container>
-                        <h4>Web Development:</h4>
-                        <i className="devicon-html5-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-css3-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-react-original-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />                        
-                        <i className="devicon-nodejs-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        <h4 style={{ textAlign: 'center' }}>Web Development:</h4>
+                        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <i className="devicon-html5-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-css3-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-react-original-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />                        
+                            <i className="devicon-nodejs-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        </Container>
                     </Container>
                 </Grid>
 
-                <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'left' }}>
+                <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Container>
-                        <h4>Databases:</h4>
-                        <i className="devicon-mysql-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-mongodb-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-neo4j-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        <h4 style={{ textAlign: 'center' }}>Databases:</h4>
+                        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <i className="devicon-mysql-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-mongodb-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-neo4j-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        </Container>
                     </Container>
                 </Grid>
 
-                <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'left' }}>
+                <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Container>
-                        <h4>Design Tools:</h4>
-                        <i className="devicon-figma-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-illustrator-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-photoshop-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        <h4 style={{ textAlign: 'center' }}>Design Tools:</h4>
+                        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <i className="devicon-figma-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-illustrator-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-photoshop-plain" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        </Container>
                     </Container>
                 </Grid>
 
-                <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'left' }}>
+                <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Container>
-                        <h4>Cloud & Infrastructure:</h4>
-                        <i className="devicon-amazonwebservices-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-docker-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        <h4 style={{ textAlign: 'center' }}>Cloud & Infrastructure:</h4>
+                        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <i className="devicon-amazonwebservices-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-docker-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        </Container>
                     </Container>
                 </Grid>
 
-                <Grid item xs={12} md={4} sx={{ display: 'flex', justifyContent: 'left' }}>
+                <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Container>
-                        <h4>General Tools:</h4>
-                        <i className="devicon-git-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-github-original-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
-                        <i className="devicon-latex-original" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        <h4 style={{ textAlign: 'center' }}>General Tools:</h4>
+                        <Container sx={{ display: 'flex', justifyContent: 'center' }}>
+                            <i className="devicon-git-plain-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-github-original-wordmark" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                            <i className="devicon-latex-original" style={{ fontSize: '50px', paddingRight: '5px' }} />
+                        </Container>
                     </Container>
                 </Grid>
             </Grid>
@@ -190,7 +202,7 @@ export default function HomePage() {
                 <Grid item xs={12} md={7}
                 sx={{ display: 'flex', flexDirection: 'column', order: { xs: 2, md: 1 }}}>
                     <Container>
-                        <h2>Education</h2>
+                        <h1>Education</h1>
                         <Divider />
                         <Box sx={{ paddingTop: '20px' }}>
                             <Grid container spacing={2} sx={{marginBottom: '10px'}}>
@@ -227,7 +239,7 @@ export default function HomePage() {
                 <Grid item xs={12} md={5}
                 sx={{ display: 'flex', flexDirection: 'column', order: { xs: 2, md: 1 }}}>
                     <Container>
-                        <h2>Interests</h2>
+                        <h1>Interests</h1>
                         <Divider />
                         <Box sx={{ paddingTop: '20px', display: 'flex', justifyContent: 'left', gap: '8px', flexWrap: 'wrap' }}>
                             {INTERESTS.map((INTERESTS, index) => (

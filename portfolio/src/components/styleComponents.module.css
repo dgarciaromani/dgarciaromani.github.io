@@ -6,7 +6,7 @@
 }
 
 .navLink:hover {
-    color: #9AE19D;
+    color: #86c232;
     font-weight: 700;
     text-decoration: overline;
 }
@@ -28,9 +28,9 @@
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #263238;
+    background-color: #86c232;
     color: white; 
-    opacity: 100%;
+    opacity: 60%;
     padding: 0px;
     border-radius: 50%;
     font-size: 20px;
@@ -38,7 +38,6 @@
 
 .scrollTopButton:hover {
     opacity: 100%;
-    background-color: #9AE19D;
 }
 
 /* Cards */

@@ -15,8 +15,24 @@ import Contact from './pages/Contact';
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#263238', // NavBar background color
+      main: '#222629', // NavBar background color
       contrastText: '#fff', // NavBar text color
+    },
+    secondary: {
+      main: '#86c232', // Secondary color - vermillion
+      contrastText: '#fff', // Text color for elements using the secondary color
+    },
+    text: {
+      primary: '#43464B', // Default primary text color - Dark Steel Gray
+      secondary: '#43464B', // Default secondary text color
+    },
+    background: {
+      default: '#f5f5f5', // Default background color - white/grey  f5f5f5
+      paper: 'white', // Background color for paper/card-like elements
+    },
+    customColor: {
+      main: '#222629', // Footer background color - Dark Steel Gray
+      contrastText: 'white', // Text color for elements using the custom color
     },
   },
   components: {
@@ -24,11 +40,15 @@ export const theme = createTheme({
       defaultProps: {
         sx: {
           margin: '10px',
-          backgroundColor: '#263238',
+          backgroundColor: (theme) => theme.palette.secondary.main, // Button color
           textTransform: 'none',
           fontFamily: 'Barlow',
           fontWeight: 'bold',
           color: 'white',
+          '&:hover': {
+            backgroundColor: (theme) => theme.palette.primary.main, 
+            color: 'white',
+          },
         },
       },
     },
