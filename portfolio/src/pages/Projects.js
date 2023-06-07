@@ -2,9 +2,8 @@ import { useState, useEffect } from 'react';
 import { Box, Container, Divider, Chip, Paper, Button  } from '@mui/material';
 import DoneIcon from '@mui/icons-material/Done';
 import { styled } from '@mui/material/styles';
-import style from './stylePages.module.css';
 import ProjectsCard from '../components/ProjectsCards';
-import { PROJECTS, TAGS } from '../data/ProjectsInfo';
+import { DESCRIPTION, PROJECTS, TAGS } from '../data/ProjectsInfo';
 
 const ListItem = styled('li')(({ theme }) => ({
     margin: theme.spacing(0.5),
@@ -75,7 +74,7 @@ export default function Projects() {
             <Container>
                 <h1>My Projects</h1>
                 <Divider />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>{DESCRIPTION}</p>
             </Container>
             
             <Container>
