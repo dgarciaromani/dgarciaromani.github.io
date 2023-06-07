@@ -23,7 +23,7 @@ export const theme = createTheme({
       contrastText: '#fff', // Text color for elements using the secondary color
     },
     text: {
-      primary: '#43464B', // Default primary text color - Dark Steel Gray
+      primary: '#43464B', // Default primary text color - Dark Steel Gray White: F5F5F5
       secondary: '#43464B', // Default secondary text color
     },
     background: {

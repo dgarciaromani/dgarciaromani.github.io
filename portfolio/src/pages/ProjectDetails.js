@@ -3,15 +3,6 @@ import { Box, Container, Divider, Chip, Grid, Button, ImageList, ImageListItem }
 import { Link } from 'react-router-dom';
 import { PROJECTS } from '../data/ProjectsInfo';
 
-function srcset(image, size, rows = 1, cols = 1) {
-    return {
-        src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-        srcSet: `${image}?w=${size * cols}&h=${
-        size * rows
-        }&fit=crop&auto=format&dpr=2 2x`,
-    };
-}
-
 export default function ProjectDetails() {
     const { id } = useParams(); 
     const project = PROJECTS.find((project) => project.id === parseInt(id));
@@ -71,7 +62,7 @@ export default function ProjectDetails() {
 
             <Container sx={{padding: '20px'}}>
                 <Button onClick={goBack}>Go Back</Button>
-                <Link to={`${project.link}`} target="_blank">
+                <Link to={`${project.link}`} target="_blank" rel="noopener noreferrer">
                     <Button>
                         {project.tags.includes("UX/UI") ? "Check out the prototype" : "Check out the code"}
                     </Button>

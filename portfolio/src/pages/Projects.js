@@ -25,7 +25,7 @@ export default function Projects() {
     const handleDelete = (tag) => () => {
         setActiveFilter((activeFilter) =>
             activeFilter.map((chip) =>
-            chip.key === tag.key ? { ...chip, active: false } : chip
+                chip.key === tag.key ? { ...chip, active: false } : chip
             )
         );
 

@@ -37,7 +37,7 @@ export default function AboutSection({ sectionRef }) {
                     <Button variant="contained" component={Link} to="/projects">
                         Check out my projects
                     </Button>
-                    <Button variant="contained" component="a" href={CV} target="_blank">
+                    <Button variant="contained" component="a" href={CV} target="_blank" rel="noopener noreferrer">
                         Download my CV
                     </Button>
                 </Grid>

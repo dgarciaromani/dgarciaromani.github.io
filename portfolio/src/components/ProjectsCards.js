@@ -37,7 +37,7 @@ export default function ProjectsCard({data}) {
                             <Link to={`/projects/${data.id}`}>
                                 <Button size="small">Learn More</Button>
                             </Link>
-                            <Link to={`${data.link}`} target="_blank">
+                            <Link to={`${data.link}`} target="_blank" rel="noopener noreferrer">
                                 <Button size="small">
                                     {data.tags.includes("UX/UI") ? "Prototype" : "Code"}
                                 </Button>

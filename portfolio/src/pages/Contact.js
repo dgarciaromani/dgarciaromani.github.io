@@ -36,8 +36,8 @@ export default function Contact() {
 
                 <Grid container spacing={2} sx={{marginBottom: '10px'}}>
                     <Grid item xs={1} md={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>               
-                        <a href="mailto:dngarcia@seas.upenn.edu" target="_blank">
-                            <img src={require("../images/mail_icon.png")} alt="Mail" width="60px" />
+                        <a href="mailto:dngarcia@seas.upenn.edu" target="_blank" rel="noopener noreferrer">
+                            <img src={require("../images/social_icons/mail_icon.png")} alt="Mail" width="60px" />
                         </a>
                     </Grid>
                     <Grid item xs={11} md={11} sx={{ display: 'flex', alignItems: 'center' }}>
@@ -58,6 +58,7 @@ export default function Contact() {
                                 label="Your name" 
                                 variant="outlined" 
                                 value={name}
+                                color="secondary"
                                 onChange={(e) => setName(e.target.value)}
                             />
                         </Grid>
@@ -67,6 +68,7 @@ export default function Contact() {
                                 label="Your email" 
                                 variant="outlined" 
                                 value={email}
+                                color="secondary"
                                 onChange={(e) => setEmail(e.target.value)}
                                 />
                         </Grid>
@@ -78,6 +80,7 @@ export default function Contact() {
                                 multiline 
                                 rows={6} 
                                 value={message}
+                                color="secondary"
                                 onChange={(e) => setMessage(e.target.value)}
                                 />
                         </Grid>
