@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Box, Container, Divider, Chip, Paper, Button  } from '@mui/material';
-import DoneIcon from '@mui/icons-material/Done';
+import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import { styled } from '@mui/material/styles';
 import ProjectsCard from '../components/ProjectsCards';
 import { DESCRIPTION, PROJECTS, TAGS } from '../data/ProjectsInfo';
@@ -8,7 +8,7 @@ import { DESCRIPTION, PROJECTS, TAGS } from '../data/ProjectsInfo';
 const ListItem = styled('li')(({ theme }) => ({
     margin: theme.spacing(0.5),
 }));
-  
+
 export default function Projects() {
     const [activeFilter, setActiveFilter] = useState([]);
     const [activeFilterCount, setActiveFilterCount] = useState(0);
@@ -99,12 +99,12 @@ export default function Projects() {
                                 variant={value.active ? "filled" : "outlined"}
                                 onDelete={value.active ? handleDelete(value) : handleAdd(value)}
                                 color="primary"
-                                deleteIcon={value.active ? undefined :  <DoneIcon />}
+                                deleteIcon={value.active ? undefined :  <ControlPointIcon />}
                             />
                         </ListItem>
                     ))}
                     {showMe && <Container style={{ display: "flex", justifyContent: "center" }}>
-                        <Button variant="text" onClick={initializeActiveFilter} sx={{backgroundColor: 'none'}}>
+                        <Button variant="text" onClick={initializeActiveFilter} sx={{backgroundColor: 'none', color: '#F5F5F5'}}>
                             RESET FILTERS
                         </Button>
                     </Container>}

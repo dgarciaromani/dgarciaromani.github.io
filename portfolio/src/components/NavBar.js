@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom';
 import style from './styleComponents.module.css';
 import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
+import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -30,7 +31,7 @@ const NavText = ({ href, text, onClick }) => {
 export default function NavBar() {
     const [anchorEl, setAnchorEl] = useState(null);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
-    const [menuIcon, setMenuIcon] = useState(<LunchDiningIcon sx={{ fontSize: 40 }} />);
+    const [menuIcon, setMenuIcon] = useState(<LocalCafeIcon sx={{ fontSize: 40 }} />);
 
     useEffect(() => {
         const handleResize = () => {
@@ -53,11 +54,11 @@ export default function NavBar() {
 
     const handleClose = () => {
         setAnchorEl(null);
-        setMenuIcon(<LunchDiningIcon sx={{ fontSize: 40 }} />);
+        setMenuIcon(<LocalCafeIcon sx={{ fontSize: 40 }} />);
     };
 
     return (
-        <AppBar position='sticky' sx={{ boxShadow: 'none' }}>
+        <AppBar position='sticky' /*sx={{ boxShadow: 'none' }}*/>
             <Container maxWidth='xl'>
                 <Toolbar disableGutters style={{ display: 'flex' }}>
                     <Container style={{ flex: 1, whiteSpace: 'nowrap' }}>
@@ -111,19 +112,24 @@ export default function NavBar() {
                                 keepMounted
                                 open={open}
                                 onClose={handleClose}
+                                PaperProps={{
+                                    sx: {
+                                      backgroundColor: '#383B3E',
+                                    },
+                                }}
                             >
-                                <MenuItem onClick={handleClose}>
-                                    <ListItemIcon>
+                                <MenuItem onClick={handleClose} sx={{ justifyContent: 'flex-end' }}>
+                                    <ListItemIcon sx={{ color: '#F5F5F5' }}>
                                         <NavText href='/' text='About' onClick={handleClose} />
                                     </ListItemIcon>
                                 </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <ListItemIcon>
+                                <MenuItem onClick={handleClose} sx={{ justifyContent: 'flex-end' }}>
+                                    <ListItemIcon sx={{ color: '#F5F5F5' }}>
                                         <NavText href='/projects' text='Projects' onClick={handleClose} />
                                     </ListItemIcon>
                                 </MenuItem>
-                                <MenuItem onClick={handleClose}>
-                                    <ListItemIcon>
+                                <MenuItem onClick={handleClose} sx={{ justifyContent: 'flex-end' }}>
+                                    <ListItemIcon sx={{ color: '#F5F5F5' }}>
                                         <NavText href='/contact' text='Contact' onClick={handleClose} />
                                     </ListItemIcon>
                                 </MenuItem>

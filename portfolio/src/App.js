@@ -23,12 +23,12 @@ export const theme = createTheme({
       contrastText: '#fff', // Text color for elements using the secondary color
     },
     text: {
-      primary: '#43464B', // Default primary text color - Dark Steel Gray White: F5F5F5
-      secondary: '#43464B', // Default secondary text color
+      primary: '#F5F5F5', // Default primary text color - Dark Steel Gray: 43464B- White: F5F5F5
+      secondary: '#F5F5F5', // Default secondary text color
     },
     background: {
-      default: '#f5f5f5', // Default background color - white/grey  f5f5f5
-      paper: 'white', // Background color for paper/card-like elements
+      default: '#222629', // Default background color - white/grey  f5f5f5
+      paper: '#F5F5F5', // Background color for paper/card-like elements
     },
     customColor: {
       main: '#222629', // Footer background color - Dark Steel Gray
@@ -44,11 +44,40 @@ export const theme = createTheme({
           textTransform: 'none',
           fontFamily: 'Barlow',
           fontWeight: 'bold',
-          color: 'white',
+          color: '#222629',
           '&:hover': {
             backgroundColor: (theme) => theme.palette.primary.main, 
-            color: 'white',
+            color: '#F5F5F5',
           },
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          '& fieldset': {
+            borderColor: '#F5F5F5',
+          },
+        },
+      },
+    },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#F5F5F5', 
+        },
+      },
+    },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          color: '#F5F5F5',
+          backgroundColor: '#383B3E',
+        },
+        filled: {
+          color: '#222629',
+          borderColor: '#222629',
+          backgroundColor: '#86c232',
         },
       },
     },

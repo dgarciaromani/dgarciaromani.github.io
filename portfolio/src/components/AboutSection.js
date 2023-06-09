@@ -54,13 +54,22 @@ export default function AboutSection({ sectionRef }) {
                 </Grid>
 
                 <Grid container spacing={2}>
-                    {Object.entries(SKILLS).map(([category, icons]) => (
+                    {Object.entries(SKILLS).map(([category, skill]) => (
                         <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }} key={category}>
                             <Container>
                                 <h4 style={{ textAlign: 'center' }}>{category}:</h4>
                                 <Container sx={{ display: 'flex', justifyContent: 'center' }}>
-                                    {icons.map((icon) => (
-                                        <i className={icon} style={{ fontSize: '50px', paddingRight: '5px' }} key={icon} />
+                                    {Object.entries(skill).map(([name, skill]) => (
+                                        <React.Fragment key={name}>
+                                            <Grid container spacing={0.5}>
+                                                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
+                                                    <i className={skill} style={{ fontSize: '50px' }} />
+                                                </Grid>
+                                                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
+                                                    <p style={{fontSize: '10px', textAlign: 'center'}}>{name}</p>
+                                                </Grid>
+                                            </Grid>
+                                        </React.Fragment>
                                     ))}
                                 </Container>
                             </Container>

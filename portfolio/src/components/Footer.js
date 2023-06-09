@@ -1,8 +1,6 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
+import { Box, Container, Divider, Typography  } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import { NAME, SOCIALMEDIA } from '../data/AboutInfo';
 
@@ -15,6 +13,7 @@ export default function StickyFooter() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
+        paddingTop: '10px',
       }}>
         <CssBaseline />
       <Box
@@ -29,11 +28,11 @@ export default function StickyFooter() {
           width: '100%',
           borderTop: 0,
         }}>
-
+        <Divider />
         <Container maxWidth="sm" sx={{ textAlign: 'center' }}>
-          <Container sx={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '20px', marginBottom: '20px' }}>
+          <Container sx={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '50px', marginBottom: '20px' }}>
             {SOCIALMEDIA.map((item, index) => (
-                <a href={item.link} target="_blank" rel="noopener noreferrer">
+                <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
                     <img src={item.srcWhite} alt={item.name} width="50px" />
                 </a>
             ))}

@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 import { Card, Container, CardContent, CardMedia, CardActions, Typography, Box, Button, Divider, Chip } from '@mui/material';
 
 export default function ProjectsCard({data}) {
-    const tallestCardHeight = Math.max(...data.map((data) => data.tags.length + 180 + 130));
+    const tallestCardHeight = Math.max(...data.map((data) => data.tags.length + 240 ));
     return (
         <Container>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '40px', gap: '20px' }}>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '40px', gap: '20px', maxWidth: '345' }}>
                 {data.map((data) => (
                     <Card key={data.id} variant="outlined" sx={{ width: 300, height: 'auto' }}>
-                        <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'top', paddingBottom: '0', height: tallestCardHeight }}>
-                            <Typography variant="h5" component="div" sx={{ textAlign: 'center' }}>
-                                {data.title}
-                            </Typography>
-                            <CardMedia
+                        <CardMedia
                                 component="img"
-                                height="190px"
+                                height="140px"
                                 image={data.image}
                                 alt={data.title}
                             />
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'top', paddingBottom: '0', height: tallestCardHeight }}>
+                            <Typography variant="h5" component="div" sx={{  color: 'background.default', fontWeight: 'bold' }}>
+                                {data.title}
+                            </Typography>
                             <Divider sx={{ width: '100%', margin: '10px 0' }} />
                             <Box sx={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
                                 {data.tags.map((tag, index) => (
@@ -32,6 +32,9 @@ export default function ProjectsCard({data}) {
                                 ))}
                             </Box>
                             <Divider sx={{ width: '100%', margin: '10px 0' }} />
+                            <Typography variant="body2" color="background.default">
+                                {data.preview}
+                            </Typography>
                         </CardContent>
                         <CardActions style={{ justifyContent: 'center' }}>
                             <Link to={`/projects/${data.id}`}>

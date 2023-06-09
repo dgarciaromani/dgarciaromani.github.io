@@ -42,7 +42,7 @@ export default function HeroSection({ handleScrollToSection }) {
                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Container sx={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '20px', marginBottom: '20px' }}>
                         {SOCIALMEDIA.map((item, index) => (
-                            <a href={item.link} target="_blank" rel="noopener noreferrer" className={style.coverIcon}>
+                            <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className={style.coverIcon}>
                                 <img src={item.srcBlack} alt={item.name} width="40px" />
                             </a>
                         ))}

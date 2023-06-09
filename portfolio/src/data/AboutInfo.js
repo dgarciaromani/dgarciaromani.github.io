@@ -19,12 +19,37 @@ export const DESCRIPTION = 'Lorem ipsum dolor sit amet, consectetur adipiscing e
 export const CV = '';
 
 export const SKILLS = {
-    'Programming Languages': ['devicon-c-plain', 'devicon-java-plain-wordmark', 'devicon-javascript-plain', 'devicon-python-plain-wordmark'],
-    'Web Development': ['devicon-html5-plain-wordmark', 'devicon-css3-plain-wordmark', 'devicon-react-original-wordmark', 'devicon-nodejs-plain-wordmark'],
-    'Databases': ['devicon-mysql-plain-wordmark', 'devicon-mongodb-plain-wordmark', 'devicon-neo4j-plain-wordmark'],
-    'Design Tools': ['devicon-figma-plain', 'devicon-photoshop-plain', 'devicon-illustrator-plain'],
-    'Cloud & Infrastructure': ['devicon-amazonwebservices-plain-wordmark', 'devicon-docker-plain-wordmark'],
-    'General Tools': ['devicon-git-plain-wordmark', 'devicon-github-original-wordmark', 'devicon-latex-original'],
+    'Programming Languages': {
+      C: 'devicon-c-plain',
+      Java: 'devicon-java-plain',
+      JavaScript: 'devicon-javascript-plain',
+      Python: 'devicon-python-plain',
+    },
+    'Web Development': {
+      HTML: 'devicon-html5-plain',
+      CSS: 'devicon-css3-plain',
+      React: 'devicon-react-original',
+      Nodejs: 'devicon-nodejs-plain',
+    },
+    'Databases': {
+      MySQL: 'devicon-mysql-plain',
+      MongoDB: 'devicon-mongodb-plain',
+      Neo4j: 'devicon-neo4j-plain',
+    },
+    'Design Tools': {
+      Figma: 'devicon-figma-plain',
+      Photoshop: 'devicon-photoshop-plain',
+      Illustrator: 'devicon-illustrator-plain',
+    },
+    'Cloud & Infrastructure': {
+      AWS: 'devicon-amazonwebservices-plain',
+      Docker: 'devicon-docker-plain',
+    },
+    'General Tools': {
+      Git: 'devicon-git-plain',
+      GitHub: 'devicon-github-original',
+      LaTeX: 'devicon-latex-original',
+    },
 };
 
 export const EDUCATION = [
