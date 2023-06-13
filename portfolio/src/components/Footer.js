@@ -32,9 +32,9 @@ export default function StickyFooter() {
         <Container maxWidth="sm" sx={{ textAlign: 'center' }}>
           <Container sx={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '50px', marginBottom: '20px' }}>
             {SOCIALMEDIA.map((item, index) => (
-                <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
-                    <img src={item.srcWhite} alt={item.name} width="50px" />
-                </a>
+              <a key={index} href={item.link} target="_blank" rel="noopener noreferrer">
+                <img src={item.srcWhite} alt={item.name} width="50px" onMouseEnter={(e) => { e.target.src = item.srcGreen; }} onMouseLeave={(e) => { e.target.src = item.srcWhite; }}/>
+              </a>
             ))}
           </Container>
 

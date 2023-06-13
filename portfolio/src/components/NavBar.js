@@ -3,7 +3,6 @@ import { AppBar, Container, Toolbar, Typography, Menu, MenuItem, IconButton, Lis
 import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
 import style from './styleComponents.module.css';
-import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import DragHandleIcon from '@mui/icons-material/DragHandle';

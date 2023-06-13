@@ -1,14 +1,22 @@
 import profilePic from "../images/profilepic.jpg";
 import pennPic from "../images/logos/Penn.png";
 import ucPic from "../images/logos/UC.png";
-import mailIconBlack from "../images/social_icons/mail_icon_2.png";
-import githubIconBlack from "../images/social_icons/github_icon_2.png";
-import linkedinIconBlack from "../images/social_icons/linkedin_icon_2.png";
-import steamIconBlack from "../images/social_icons/steam_icon_2.png";
 import mailIconWhite from "../images/social_icons/mail_icon.png";
 import githubIconWhite from "../images/social_icons/github_icon.png";
 import linkedinIconWhite from "../images/social_icons/linkedin_icon.png";
 import steamIconWhite from "../images/social_icons/steam_icon.png";
+import mailIconBlack from "../images/social_icons/mail_icon_2.png";
+import githubIconBlack from "../images/social_icons/github_icon_2.png";
+import linkedinIconBlack from "../images/social_icons/linkedin_icon_2.png";
+import steamIconBlack from "../images/social_icons/steam_icon_2.png";
+import mailIconGrey from "../images/social_icons/mail_icon_3.png";
+import githubIconGrey from "../images/social_icons/github_icon_3.png";
+import linkedinIconGrey from "../images/social_icons/linkedin_icon_3.png";
+import steamIconGrey from "../images/social_icons/steam_icon_3.png";
+import mailIconGreen from "../images/social_icons/mail_icon_4.png";
+import githubIconGreen from "../images/social_icons/github_icon_4.png";
+import linkedinIconGreen from "../images/social_icons/linkedin_icon_4.png";
+import steamIconGreen from "../images/social_icons/steam_icon_4.png";
 
 export const NAME = 'Daniela Garcia';
 
@@ -86,23 +94,31 @@ export const SOCIALMEDIA = [
         link: 'mailto:dngarcia@seas.upenn.edu',
         srcBlack: mailIconBlack,
         srcWhite: mailIconWhite,
+        srcGrey: mailIconGrey,
+        srcGreen: mailIconGreen,
     },
     {
         name: 'Github',
         link: 'https://github.com/danielagarcia9',
         srcBlack: githubIconBlack,
         srcWhite: githubIconWhite,
+        srcGrey: githubIconGrey,
+        srcGreen: githubIconGreen,
     },
     {
         name: 'Linkedin',
         link: 'https://www.linkedin.com/in/danielagarcia9/?locale=en_US',
         srcBlack: linkedinIconBlack,
         srcWhite: linkedinIconWhite,
+        srcGrey: linkedinIconGrey,
+        srcGreen: linkedinIconGreen,
     },
     {
         name: 'Steam',
         link: 'https://steamcommunity.com/id/danielagarcia9/',
         srcBlack: steamIconBlack,
         srcWhite: steamIconWhite,
+        srcGrey: steamIconGrey,
+        srcGreen: steamIconGreen,
     },
 ];

@@ -30,7 +30,7 @@ export default function ScrollButton() {
             style={{display: showButton ? 'inline' : 'none'}} 
             className = {style.scrollTopButton}
         >
-            <ExpandLessIcon sx={{ fontSize: 60, color: 'white' }}/>
+            <ExpandLessIcon sx={{ fontSize: 60, color: '#222629' }}/>
         </button>
     );
 

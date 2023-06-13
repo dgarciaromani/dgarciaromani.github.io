@@ -43,7 +43,7 @@ export default function HeroSection({ handleScrollToSection }) {
                     <Container sx={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '20px', marginBottom: '20px' }}>
                         {SOCIALMEDIA.map((item, index) => (
                             <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className={style.coverIcon}>
-                                <img src={item.srcBlack} alt={item.name} width="40px" />
+                                <img src={item.srcBlack} alt={item.name} width="40px" onMouseEnter={(e) => { e.target.src = item.srcGreen; }} onMouseLeave={(e) => { e.target.src = item.srcBlack; }}/>
                             </a>
                         ))}
                     </Container>
