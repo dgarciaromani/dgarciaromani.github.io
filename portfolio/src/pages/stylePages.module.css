@@ -6,28 +6,25 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-color: #263238;*/
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.h1Cover {
+.lettersCover {
     text-align: center;
     color: white;
-    font-size: 100px;
-    font-weight: bold;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 2px 2px #000000;
     font-family: 'Barlow', sans-serif;
 }
 
-.pCover {
+.mainCover {
     text-align: center;
     color: white;
-    font-size: 20px;
-    text-shadow: 1px 1px #000000;
-    font-family: 'Barlow', sans-serif;
+    text-shadow: 2px 2px #000000;
+    font-family: 'Major Mono Display', monospace;
+    letter-spacing: -15px;
 }
 
 /* Cover button down */

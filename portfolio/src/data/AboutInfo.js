@@ -1,28 +1,32 @@
 import profilePic from "../images/profilepic.jpg";
 import pennPic from "../images/logos/Penn.png";
 import ucPic from "../images/logos/UC.png";
-import mailIconWhite from "../images/social_icons/mail_icon.png";
-import githubIconWhite from "../images/social_icons/github_icon.png";
-import linkedinIconWhite from "../images/social_icons/linkedin_icon.png";
-import steamIconWhite from "../images/social_icons/steam_icon.png";
-import mailIconBlack from "../images/social_icons/mail_icon_2.png";
-import githubIconBlack from "../images/social_icons/github_icon_2.png";
-import linkedinIconBlack from "../images/social_icons/linkedin_icon_2.png";
-import steamIconBlack from "../images/social_icons/steam_icon_2.png";
-import mailIconGrey from "../images/social_icons/mail_icon_3.png";
-import githubIconGrey from "../images/social_icons/github_icon_3.png";
-import linkedinIconGrey from "../images/social_icons/linkedin_icon_3.png";
-import steamIconGrey from "../images/social_icons/steam_icon_3.png";
-import mailIconGreen from "../images/social_icons/mail_icon_4.png";
-import githubIconGreen from "../images/social_icons/github_icon_4.png";
-import linkedinIconGreen from "../images/social_icons/linkedin_icon_4.png";
-import steamIconGreen from "../images/social_icons/steam_icon_4.png";
+import mailIconWhite from "../images/social_icons/mail_white.png";
+import mailIconBlack from "../images/social_icons/mail_black.png";
+import mailIconGrey from "../images/social_icons/mail_grey.png";
+import mailIconGreen from "../images/social_icons/mail_green.png";
+import githubIconWhite from "../images/social_icons/github_white.png";
+import githubIconBlack from "../images/social_icons/github_black.png";
+import githubIconGrey from "../images/social_icons/github_grey.png";
+import githubIconGreen from "../images/social_icons/github_green.png";
+import linkedinIconWhite from "../images/social_icons/linkedin_white.png";
+import linkedinIconBlack from "../images/social_icons/linkedin_black.png";
+import linkedinIconGrey from "../images/social_icons/linkedin_grey.png";
+import linkedinIconGreen from "../images/social_icons/linkedin_green.png";
+import steamIconWhite from "../images/social_icons/steam_white.png";
+import steamIconBlack from "../images/social_icons/steam_black.png";
+import steamIconGrey from "../images/social_icons/steam_grey.png";
+import steamIconGreen from "../images/social_icons/steam_green.png";
 
 export const NAME = 'Daniela Garcia';
 
 export const PHOTO = profilePic;
 
-export const DESCRIPTION = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Venenatis lectus magna fringilla urna porttitor rhoncus dolor. Sagittis id consectetur purus ut. Habitant morbi tristique senectus et netus et malesuada fames ac. Arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc. Cursus vitae congue mauris rhoncus aenean vel. Tellus id interdum velit laoreet id donec ultrices tincidunt. Suspendisse faucibus interdum posuere lorem ipsum. A erat nam at lectus urna duis. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Pharetra sit amet aliquam id diam maecenas ultricies mi. Non curabitur gravida arcu ac tortor dignissim convallis aenean. Pretium vulputate sapien nec sagittis aliquam. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Proin fermentum leo vel orci. Justo donec enim diam vulputate ut pharetra.';
+export const DESCRIPTION = [
+  `I am a Psychology Graduate with 7+ years of experience as an Organizational Development consultant in the HR field, seeking a new career in software engineering. I am a creative problem solver with a passion for UX/UI design and photography. I enjoy the challenge of understanding user needs and designing solutions that are not only functional but also aesthetically pleasing. I am always looking for ways to apply my various skills to tackle complex challenges.`,
+  `In my previous role as an Organizational Development consultant, I gained extensive experience in analyzing and improving organizational processes, fostering teamwork and collaboration, and understanding the bigger picture. This background has equipped me with strong analytical and problem-solving skills, as well as the ability to comprehend and adapt to the needs of different stakeholders. Moreover, I have a proven track record of delivering successful outcomes that align with organizational objectives.`,
+  `My passion for UX/UI design and photography complements my interest in software engineering. I believe that a user-centered approach is crucial in creating software that not only meets functional requirements but also delivers a seamless and enjoyable user experience. With my understanding of human behavior and psychology, I can leverage my skills to develop intuitive interfaces, conduct user research, and implement design principles that enhance usability and user satisfaction.`,
+];
 
 export const CV = '';
 

@@ -15,6 +15,7 @@
     font-size: 1.5em;
     display: inline-block;
     font-family: 'Major Mono Display', monospace;
+    letter-spacing: -2px;
 }
 
 /* ScrollButton */

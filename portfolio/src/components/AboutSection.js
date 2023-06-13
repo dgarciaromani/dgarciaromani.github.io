@@ -16,9 +16,11 @@ export default function AboutSection({ sectionRef }) {
                                 <h1>About me</h1>
                                 <Divider />
                             </Grid>
-                            <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'left' }}>
-                                <p>{DESCRIPTION}</p>
-                            </Grid>
+                            <Box>
+                                {DESCRIPTION.map((paragraph, index) => (
+                                    <p key={index}>{paragraph}</p>
+                                ))}
+                            </Box>
                         </Container>
                     </Grid>
 

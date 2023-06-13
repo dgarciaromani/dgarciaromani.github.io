@@ -37,7 +37,7 @@ export default function Contact() {
                 <Grid container spacing={2} sx={{marginBottom: '10px'}}>
                     <Grid item xs={1} md={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>               
                         <a href="mailto:dngarcia@seas.upenn.edu" target="_blank" rel="noopener noreferrer">
-                            <img src={require("../images/social_icons/mail_icon.png")} alt="Mail" width="60px" />
+                            <img src={require("../images/social_icons/mail_white.png")} alt="Mail" width="60px" />
                         </a>
                     </Grid>
                     <Grid item xs={11} md={11} sx={{ display: 'flex', alignItems: 'center' }}>

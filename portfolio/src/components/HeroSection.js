@@ -10,23 +10,23 @@ export default function HeroSection({ handleScrollToSection }) {
         <Box className = {style.cover}>
             <Grid container spacing={2}>
                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Typography component="p" variant="body1" className = {style.h1Cover}>
+                    <Typography component="p" variant="h6" className = {style.lettersCover}>
                         Hey there! My name is
                     </Typography>
                 </Grid>
                 
                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Typography component="h1" variant="h1" className = {style.h1Cover}>
+                    <Typography component="h1" variant="h1" className = {style.mainCover}>
                         {NAME}
                     </Typography>
                 </Grid>
 
                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Typography component="p" variant="body1" className = {style.h1Cover}>
+                    <Typography component="p" variant="h6" className = {style.lettersCover}>
                         <TypeAnimation
                             sequence={[
                                 'and I am a Software Engineer', 3000,
-                                'and I am a Organizational Psychologist', 3000,
+                                'and I am an Organizational Psychologist', 3000,
                                 'and I am a UX/UI Designer', 3000,     
                                 'and I am a Photographer', 3000,
                             ]}
