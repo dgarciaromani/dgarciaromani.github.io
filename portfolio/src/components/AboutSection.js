@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Box, Button, Grid, Chip, Divider } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-import { NAME, PHOTO, DESCRIPTION, CV, SKILLS, EDUCATION, INTERESTS } from '../data/AboutInfo';
+import { NAME, PHOTO, DESCRIPTION, CV, INTROSKILLS, SKILLS, EDUCATION, INTERESTS } from '../data/AboutInfo';
 
 export default function AboutSection({ sectionRef }) {
     return (
@@ -51,11 +51,14 @@ export default function AboutSection({ sectionRef }) {
                         <Container>
                             <h1>Skills</h1>
                             <Divider />
+                            <p>{INTROSKILLS}</p>
                         </Container> 
                     </Grid>
                 </Grid>
 
                 <Grid container spacing={2}>
+                    
+                    
                     {Object.entries(SKILLS).map(([category, skill]) => (
                         <Grid item xs={12} sm={6} md={4} sx={{ display: 'flex', justifyContent: 'center' }} key={category}>
                             <Container>

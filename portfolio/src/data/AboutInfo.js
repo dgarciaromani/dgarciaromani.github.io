@@ -30,6 +30,8 @@ export const DESCRIPTION = [
 
 export const CV = '';
 
+export const INTROSKILLS = 'Throughout my education and professional journey, I have had the opportunity to work with a diverse range of tools, languages, and technologies. These experiences have honed my skills and equipped me with a versatile skill set that I can bring to the table.';
+
 export const SKILLS = {
     'Programming Languages': {
       C: 'devicon-c-plain',
@@ -103,7 +105,7 @@ export const SOCIALMEDIA = [
     },
     {
         name: 'Github',
-        link: 'https://github.com/danielagarcia9',
+        link: 'https://github.com/dgarciaromani',
         srcBlack: githubIconBlack,
         srcWhite: githubIconWhite,
         srcGrey: githubIconGrey,
@@ -111,7 +113,7 @@ export const SOCIALMEDIA = [
     },
     {
         name: 'Linkedin',
-        link: 'https://www.linkedin.com/in/danielagarcia9/?locale=en_US',
+        link: 'https://www.linkedin.com/in/dgarciaromani/?locale=en_US',
         srcBlack: linkedinIconBlack,
         srcWhite: linkedinIconWhite,
         srcGrey: linkedinIconGrey,

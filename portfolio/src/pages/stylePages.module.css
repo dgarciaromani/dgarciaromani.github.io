@@ -23,8 +23,8 @@
     text-align: center;
     color: white;
     text-shadow: 2px 2px #000000;
-    font-family: 'Major Mono Display', monospace;
-    letter-spacing: -15px;
+    /*font-family: 'Major Mono Display', monospace;
+    letter-spacing: -15px;*/
 }
 
 /* Cover button down */

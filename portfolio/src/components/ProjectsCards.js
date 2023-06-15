@@ -8,7 +8,7 @@ export default function ProjectsCard({data}) {
         <Container>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '40px', gap: '20px', maxWidth: '345' }}>
                 {data.map((data) => (
-                    <Card key={data.id} variant="outlined" sx={{ width: 300, height: 'auto' }}>
+                    <Card key={data.id} variant="outlined" sx={{ width: 328, height: 'auto' }}>
                         <CardMedia
                                 component="img"
                                 height="140px"
@@ -42,7 +42,7 @@ export default function ProjectsCard({data}) {
                             </Link>
                             <Link to={`${data.link}`} target="_blank" rel="noopener noreferrer">
                                 <Button size="small">
-                                    {data.tags.includes("UX/UI") ? "Prototype" : "Code"}
+                                    {data.tags.includes("UX/UI Design") ? "Prototype" : "Code"}
                                 </Button>
                             </Link>
                         </CardActions>
