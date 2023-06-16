@@ -40,3 +40,64 @@
 .scrollTopButton:hover {
     opacity: 100%;
 }
+
+/* HeroSection */
+.cover {
+    background-image: linear-gradient(rgba(0,0,0,0.5), 
+        rgba(0,0,0,0.1)), 
+        url(../images/homepage_full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lettersCover {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    font-family: 'Barlow', sans-serif;
+}
+
+.mainCover {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #000000;
+}
+
+/* Cover button down */
+.expandIcon {
+    color: white;
+    transition: transform 0.3s;
+}
+  
+.expandIcon:hover {
+    transform: scale(1.2);
+    color: #86c232;
+    font-weight: 700;
+}
+
+/* Social buttons */
+.coverIcon:hover {
+    transform: scale(1.2);
+}
+
+/* Mobile specific styles */
+@media (max-width: 700px) {
+    .cover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/homepage_mobile.jpg);
+    }
+
+    .h1Cover {
+        font-size: 10px;
+    }
+}
+
+/* Grids and containers */
+.centered {
+    display: flex;
+    justify-content: center;
+}

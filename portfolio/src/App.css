@@ -9,3 +9,20 @@ h1 {
 p {
   font-family: 'Roboto';
 }
+
+/* Text color */
+a:link {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+/* Text color */
+a:visited {
+  color: #F5F5F5;
+}
+
+/* Secondary color */
+a:hover {
+  color: #86c232;
+}
+

@@ -42,11 +42,17 @@ export default function ProjectDetails() {
 
             <Container sx={{padding: '20px'}}>
                 <Button onClick={goBack}>Go Back</Button>
-                <Link to={`${project.link}`} target="_blank" rel="noopener noreferrer">
-                    <Button>
-                        {project.tags.includes("UX/UI Design") ? "Check out the prototype" : "Check out the code"}
+                {project.link ? (
+                    <Link to={`${project.link}`} target="_blank" rel="noopener noreferrer">
+                        <Button>
+                            {project.tags.includes("UX/UI Design") ? "Check out the prototype" : "Check out the code"}
+                        </Button>
+                    </Link>
+                    ) : (
+                    <Button disabled>
+                        Code not available
                     </Button>
-                </Link>
+                )}
             </Container> 
         </Box>
     );

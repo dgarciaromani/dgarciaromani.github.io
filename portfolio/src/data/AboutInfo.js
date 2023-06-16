@@ -1,6 +1,9 @@
 import profilePic from "../images/profilepic.jpg";
 import pennPic from "../images/logos/Penn.png";
 import ucPic from "../images/logos/UC.png";
+import harvardPic from "../images/logos/Harvard.png";
+import brainstationPic from "../images/logos/BrainStation.png";
+import roiPic from "../images/logos/ROI.png";
 import mailIconWhite from "../images/social_icons/mail_white.png";
 import mailIconBlack from "../images/social_icons/mail_black.png";
 import mailIconGrey from "../images/social_icons/mail_grey.png";
@@ -71,7 +74,7 @@ export const EDUCATION = [
       logo: pennPic,
       degree: 'Master in Computer and Information Technology',
       university: 'School of Engineering and Applied Science, University of Pennsylvania',
-      srcWidth: '35px',
+      srcWidth: '40px',
       srcHeight: '40px'
     },
     {
@@ -83,12 +86,56 @@ export const EDUCATION = [
     },
 ];
 
+export const CERTIFICATIONS = [
+  {
+    logo: harvardPic,
+    degree: 'CS50 Introduction to Computer Science',
+    institution: 'HarvardX',
+    website: 'https://pll.harvard.edu/course/cs50-introduction-computer-science',
+    srcWidth: '40px',
+    srcHeight: '40px'
+  },
+  {
+    logo: pennPic,
+    degree: 'Computational Thinking for Problem Solving Certificate',
+    institution: 'University of Pennsylvania',
+    website: 'https://online.seas.upenn.edu/lifelong-learning/on-demand-learning/computational-thinking/',
+    srcWidth: '40px',
+    srcHeight: '40px'
+  },
+  {
+    logo: brainstationPic,
+    degree: 'User Experience Design Certificate',
+    institution: 'BrainStation',
+    website: 'https://brainstation.io/course/new-york/user-experience-design',
+    srcWidth: '40px',
+    srcHeight: '40px'
+  },
+  {
+    logo: roiPic,
+    degree: 'Certified ROI Professional',
+    institution: 'ROI Institute',
+    website: 'https://roiinstitute.net/roicertification/',
+    srcWidth: '40px',
+    srcHeight: '40px'
+  },
+  {
+    logo: ucPic,
+    degree: 'Aesthetics Photography Certificate',
+    institution: 'Pontificia Universidad Católica de Chile',
+    website: 'https://formaciongeneral.uc.cl/explora-los-certificados-academicos/',
+    srcWidth: '40px',
+    srcHeight: '40px'
+  },
+];
+
 
 export const INTERESTS = [
     "Technology", 
     "UX/UI Design", 
     "Photography", 
     "Travelling", 
+    "Biking",
     "Fine Arts", 
     "Literature", 
     "Coffee!"

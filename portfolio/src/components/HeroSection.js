@@ -2,26 +2,26 @@ import React from 'react';
 import { Container, Typography, Box, Grid } from '@mui/material';
 import { TypeAnimation } from 'react-type-animation';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import style from '../pages/stylePages.module.css';
+import style from '../components/styleComponents.module.css';
 import { NAME, SOCIALMEDIA } from '../data/AboutInfo';
 
 export default function HeroSection({ handleScrollToSection }) {
     return (
         <Box className = {style.cover}>
             <Grid container spacing={2}>
-                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item xs={12} className = {style.centered}>
                     <Typography component="p" variant="h6" className = {style.lettersCover}>
                         Hey there! My name is
                     </Typography>
                 </Grid>
                 
-                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Typography component="h1" variant="h1" className = {style.mainCover}>
+                <Grid item xs={12} className = {style.centered}>
+                    <Typography component="h1" variant="h1" className = {style.mainCover} sx={{fontFamily: '"Barlow", sans-serif'}}>
                         {NAME}
                     </Typography>
                 </Grid>
 
-                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item xs={12} className = {style.centered}>
                     <Typography component="p" variant="h6" className = {style.lettersCover}>
                         <TypeAnimation
                             sequence={[
@@ -34,12 +34,11 @@ export default function HeroSection({ handleScrollToSection }) {
                             cursor={true}
                             repeat={Infinity}
                             deletionSpeed={40}
-                            className = {style.typeAnimation}
                         />
                     </Typography>
                 </Grid>
 
-                <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item xs={12} className = {style.centered}>
                     <Container sx={{ display: 'flex', justifyContent: 'center', gap: '10px', marginTop: '20px', marginBottom: '20px' }}>
                         {SOCIALMEDIA.map((item, index) => (
                             <a key={index} href={item.link} target="_blank" rel="noopener noreferrer" className={style.coverIcon}>

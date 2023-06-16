@@ -26,30 +26,13 @@ export default function Contact() {
     }
 
     return (
-        <Box sx={{ marginBottom: '40px' }}>
+        <Box>
             <Container>
                 <h1>Contact me!</h1>
                 <Divider />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Let's connect! Whether you have a project in mind, want to discuss a potential partnership, or just want to chat, I'd love to hear from you. Don't hesitate to drop me a message using the contact form below or connect with me through my social media links. Looking forward to hearing from you!</p>
             </Container>
             <Container>
-
-                <Grid container spacing={2} sx={{marginBottom: '10px'}}>
-                    <Grid item xs={1} md={1} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>               
-                        <a href="mailto:dngarcia@seas.upenn.edu" target="_blank" rel="noopener noreferrer">
-                            <img src={require("../images/social_icons/mail_white.png")} alt="Mail" width="60px" />
-                        </a>
-                    </Grid>
-                    <Grid item xs={11} md={11} sx={{ display: 'flex', alignItems: 'center' }}>
-                        <h2>dngarcia@seas.upenn.edu</h2>
-                    </Grid>
-                </Grid>
-
-                
-            </Container>
-            <Container>
-                <Divider />
-                <h3>Or send me a message: </h3>
                 <form onSubmit={handleSubmit}>
                     <Grid container spacing={2}>
                         <Grid item xs={12} md={6} sx={{ display: 'flex', flexDirection: 'column' }}>
@@ -78,7 +61,7 @@ export default function Contact() {
                                 label="Your message" 
                                 variant="outlined" 
                                 multiline 
-                                rows={6} 
+                                rows={4} 
                                 value={message}
                                 color="secondary"
                                 onChange={(e) => setMessage(e.target.value)}

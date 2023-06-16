@@ -1,4 +1,5 @@
 import personalwebMain from "../images/projects/personalwebsite/main.jpg";
+import personalweb1 from "../images/projects/personalwebsite/1.jpg";
 
 import shakeitMain from "../images/projects/shakeit/main.jpg";
 import shakeit1 from "../images/projects/shakeit/1.jpg";
@@ -29,7 +30,7 @@ import myuc14 from "../images/projects/myuc/14.jpg";
 import myuc15 from "../images/projects/myuc/15.jpg";
 import myuc16 from "../images/projects/myuc/16.jpg";
 
-export const DESCRIPTION = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+export const DESCRIPTION = "Discover the projects that showcase my problem-solving skills and expertise. Here, I present a collection of challenges I've tackled and the solutions I've crafted. From building intuitive user interfaces to developing specific programs, these projects demonstrate my ability to overcome obstacles and deliver exceptional results. You can utilize the filters to narrow down projects based on the specific programming language or tool employed.";
 
 export const PROJECTS = [
     {
@@ -39,14 +40,18 @@ export const PROJECTS = [
         "HTML/CSS", "JavaScript", "Nodejs", "Programming", "React"],
       preview: "I have personally designed and programmed this website from scratch, utilizing React and Nodejs, as a platform to demonstrate my proficiency in UX/UI design and web development.",
       description: [
-        "TODO",
+        "Welcome to my personal website, a project born out of my interest in web development. From the very beginning, I was driven by the desire to create a platform that authentically represents who I am and demonstrates my proficiency in UX/UI design and web development, all while avoiding the use of pre-made templates. I took it upon myself to meticulously design and program this website from scratch, harnessing the power of React and Node.js. Every aspect of this website has been carefully crafted to reflect my personal touch and unwavering commitment to detail. ",
       ],
-      link: "https://github.com/danielagarcia9/danielagarcia9.github.io",
+      link: "https://github.com/dgarciaromani/dgarciaromani.github.io",
       image: personalwebMain,
       photos: [
         {
           label: 'Main',
           image: personalwebMain,
+        },
+        {
+          label: 'Mobile',
+          image: personalweb1,
         },
       ],
     },
@@ -60,7 +65,7 @@ export const PROJECTS = [
         "This is a dedicated website that revolves around cocktails and drinks. Here, you can explore a wide variety of drink recipes and the necessary ingredients to make them. Alongside an extensive collection of cocktail recipes, I provide food pairing ideas to enhance the drinking experience.",
         "The development of this website involved the utilization of React for the frontend and Nodejs for the backend. To populate the content, I incorporated two different APIs: The Cocktail DB and The Meal DB, which offer free access at their basic level.",
       ],
-      link: "https://github.com/danielagarcia9/Shake-it",
+      link: "https://github.com/dgarciaromani/Shake-it",
       image: shakeitMain,
       photos: [
         {
@@ -105,10 +110,10 @@ export const PROJECTS = [
       description: [
         "Social Determinants of Health encompass the conditions under which individuals are born, grow, live, work, and age, and the impact of these conditions on their overall health and well-being. These determinants include various factors such as income, education, employment, housing, and social support. Extensive research has consistently shown that social determinants of health significantly influence individuals' health outcomes, with those experiencing disadvantage in these areas being at a higher risk of poor health and chronic diseases. Understanding and addressing social determinants of health is crucial for improving population health overall and achieving health equity.",
         "This project was collaboratively developed with colleagues from my master's degree program, aiming to synthesize this data into an easily accessible website. Our objective was to demonstrate the disparities in opportunities across different areas of the United States. I took the base code and made some modifications to be able to showcase it in my portfolio.",
-        "For this project, we selected two primary datasets: one focusing on SDoH and the other on health outcomes. Both datasets were collected at the census tract level, which represents statistical subdivisions of a county and can be updated by local participants before each decennial census. Census tracts offer a smaller level of granularity compared to zip codes, enabling us to highlight significant differences even within relatively close geographical areas. We joined the data based on the census tract to establish correlations between SDoH and health outcomes.",
+        "For this project, we selected two primary datasets: one focusing on Social Determinants of Health and the other on health outcomes. Both datasets were collected at the census tract level, which represents statistical subdivisions of a county and can be updated by local participants before each decennial census. Census tracts offer a smaller level of granularity compared to zip codes, enabling us to highlight significant differences even within relatively close geographical areas. We joined the data based on the census tract to establish correlations between Social Determinants of Health and health outcomes.",
         "To build the project, we utilized MySQL as our SQL database. The front end was developed using React, while the back end was constructed with Nodejs. We incorporated the MUI JavaScript library, as well as Leaflet and Leaflet-react, which allowed us to visualize GeoJSON data on a map. These tools and technologies formed the foundation of our project, enabling us to present the information effectively and create meaningful visualizations.",
       ],
-      link: "TODO",
+      link: "",
       image: sdohMain,
       photos: [
         {
@@ -121,24 +126,24 @@ export const PROJECTS = [
       id: 4,
       title: "Data Analyzer Program",
       tags: ["Programming", "Java"],
-      preview: "TODO",
+      preview: "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
       description: [
-        "TODO",
+        "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
       ],
       link: "",
-      image: "TODO",
+      image: "https://fakeimg.pl/200x100?text=Image+not+available",
       photos: [],
     },
     {
       id: 5,
       title: "Naval Clash Game",
       tags: ["Programming", "Java"],
-      preview: "TODO",
+      preview: "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
       description: [
-        "TODO",
+        "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
       ],
       link: "",
-      image: "TODO",
+      image: "https://fakeimg.pl/200x100?text=Image+not+available",
       photos: [],
     },
     {
@@ -156,6 +161,10 @@ export const PROJECTS = [
         {
           label: 'Main',
           image: myucMain,
+        },
+        {
+          label: 'Figma preview',
+          image: myuc16,
         },
         {
           label: 'User Persona 1',
@@ -217,10 +226,7 @@ export const PROJECTS = [
           label: 'UI design',
           image: myuc15,
         },
-        {
-          label: 'Figma preview',
-          image: myuc16,
-        },
+        
       ],
       prototype: '<iframe style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMv8AHwTpqufKteyIiDmAe0%2FProject-%25231%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-434%26viewport%3D339%252C489%252C0.13%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26show-proto-sidebar%3D1" allowfullscreen />',
     },

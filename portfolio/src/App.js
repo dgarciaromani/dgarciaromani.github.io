@@ -49,6 +49,11 @@ export const theme = createTheme({
             backgroundColor: (theme) => theme.palette.primary.main, 
             color: '#F5F5F5',
           },
+          '&[disabled]': {
+            backgroundColor: (theme) => theme.palette.grey[300],
+            color: (theme) => theme.palette.grey[700],
+            cursor: 'not-allowed',
+          },
         },
       },
     },
