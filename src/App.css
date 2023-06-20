@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+/* Text color */
+a:link {
+  color: #F5F5F5;
+  text-decoration: none;
+}
+
+/* Secondary color */
+a:hover {
+  color: #86c232;
+}
+
