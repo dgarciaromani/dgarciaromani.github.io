@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Box, Container, Divider, Chip, Paper, Button  } from '@mui/material';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import { styled } from '@mui/material/styles';
@@ -13,16 +13,9 @@ export default function Projects() {
     const [activeFilter, setActiveFilter] = useState([]);
     const [activeFilterCount, setActiveFilterCount] = useState(0);
     const [showMe, setShowMe] = useState(false);
+    const hasRunEffectRef = useRef(false);
 
-    useEffect(() => {
-        initializeActiveFilter();
-    }, []);
-
-    const sortActiveFilter = (data) => {
-        return data.sort((a, b) => a.label.localeCompare(b.label));
-    };
-
-    const initializeActiveFilter = () => {
+    const initializeFilter = () => {
         const transformedData = Object.entries(TAGS).map(([key, label]) => ({
             key: parseInt(key),
             label,
@@ -32,6 +25,24 @@ export default function Projects() {
         setActiveFilter(sortedData);
         setActiveFilterCount(0);
         setShowMe(false);
+    };
+
+    const getStorage = () => {
+        const storedActiveFilter = JSON.parse(sessionStorage.getItem('activeFilter'));
+        const storedActiveFilterCount = parseInt(sessionStorage.getItem('activeFilterCount'));
+        const transformedData = storedActiveFilter.map(({ key, label, active }) => ({
+            key: parseInt(key),
+            label,
+            active,
+        }));
+        const sortedData = sortActiveFilter(transformedData);
+        setActiveFilter(sortedData);
+        setActiveFilterCount(storedActiveFilterCount);
+        setShowMe(storedActiveFilterCount > 0);
+    };
+
+    const sortActiveFilter = (data) => {
+        return data.sort((a, b) => a.label.localeCompare(b.label));
     };
 
     const handleDelete = (tag) => () => {
@@ -62,12 +73,35 @@ export default function Projects() {
     };
 
     const filteredProjects = activeFilter.some((tag) => tag.active)
-    ? PROJECTS.filter((project) => {
-        const projectTags = project.tags;
-        const activeTags = activeFilter.filter((tag) => tag.active);
-        return activeTags.some((tag) => projectTags.includes(tag.label));
-      })
-    : PROJECTS;
+        ? PROJECTS.filter((project) => {
+            const projectTags = project.tags;
+            const activeTags = activeFilter.filter((tag) => tag.active);
+            return activeTags.some((tag) => projectTags.includes(tag.label));
+        })
+        : PROJECTS;
+
+    useEffect(() => {
+        if (!hasRunEffectRef.current) {
+            if (sessionStorage.getItem('storedData') === 'true') {
+                getStorage();
+            } else {
+                initializeFilter();
+            }
+            hasRunEffectRef.current = true;
+        }
+    });
+
+    useEffect(() => {
+        const activeFilterData = JSON.stringify(activeFilter);
+        sessionStorage.setItem('activeFilter', activeFilterData);
+        sessionStorage.setItem('storedData', true);
+    }, [activeFilter]);
+    
+    useEffect(() => {
+        const activeFilterDataCount = activeFilterCount.toString();
+        sessionStorage.setItem('activeFilterCount', activeFilterDataCount);
+        sessionStorage.setItem('storedData', true);
+    }, [activeFilterCount]);
 
     return (
         <Box>
@@ -104,7 +138,7 @@ export default function Projects() {
                         </ListItem>
                     ))}
                     {showMe && <Container style={{ display: "flex", justifyContent: "center" }}>
-                        <Button variant="text" onClick={initializeActiveFilter} sx={{backgroundColor: 'none', color: '#F5F5F5'}}>
+                        <Button variant="text" onClick={initializeFilter} sx={{backgroundColor: 'none', color: '#F5F5F5'}}>
                             RESET FILTERS
                         </Button>
                     </Container>}
