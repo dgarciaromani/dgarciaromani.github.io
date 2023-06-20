@@ -15,23 +15,23 @@ import Contact from './pages/Contact';
 export const theme = createTheme({
   palette: {
     primary: {
-      main: '#222629', // NavBar background color
+      main: '#222629', // NavBar background color (Dark Steel Gray)
       contrastText: '#fff', // NavBar text color
     },
     secondary: {
-      main: '#86c232', // Secondary color - vermillion
+      main: '#86c232', // Secondary color (Green)
       contrastText: '#fff', // Text color for elements using the secondary color
     },
     text: {
-      primary: '#F5F5F5', // Default primary text color - Dark Steel Gray: 43464B- White: F5F5F5
+      primary: '#F5F5F5', // Default primary text color (White)
       secondary: '#F5F5F5', // Default secondary text color
     },
     background: {
-      default: '#222629', // Default background color - white/grey  f5f5f5
+      default: '#222629', // Default background color (Dark Steel Gray)
       paper: '#F5F5F5', // Background color for paper/card-like elements
     },
     customColor: {
-      main: '#222629', // Footer background color - Dark Steel Gray
+      main: '#222629', // Footer background color (Dark Steel Gray)
       contrastText: 'white', // Text color for elements using the custom color
     },
   },
@@ -44,10 +44,10 @@ export const theme = createTheme({
           textTransform: 'none',
           fontFamily: 'Barlow',
           fontWeight: 'bold',
-          color: '#222629',
+          color: (theme) => theme.palette.customColor.main,
           '&:hover': {
             backgroundColor: (theme) => theme.palette.primary.main, 
-            color: '#F5F5F5',
+            color: (theme) => theme.palette.secondary.main,
           },
           '&[disabled]': {
             backgroundColor: (theme) => theme.palette.grey[300],

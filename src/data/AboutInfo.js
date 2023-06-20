@@ -68,7 +68,7 @@ export const SKILLS = {
 export const EDUCATION = [
     {
       logo: pennPic,
-      degree: 'Master in Computer and Information Technology',
+      degree: 'Master in Computer and Information Technology (expected May 2024)',
       university: 'School of Engineering and Applied Science, University of Pennsylvania',
       srcWidth: '40px',
       srcHeight: '40px'
