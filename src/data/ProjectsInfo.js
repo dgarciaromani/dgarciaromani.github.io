@@ -57,6 +57,39 @@ export const PROJECTS = [
     },
     {
       id: 2,
+      title: "Social Health Insights",
+      tags: ["HTML/CSS", "JavaScript", "MySQL", "Nodejs", "Programming", "React"],
+      preview: "This collaborative project focused on synthesize Social Determinants of Health data and health outcomes into an easily accessible website, showing disparities in opportunities across different areas of the United States.",
+      description: [
+        "Social Determinants of Health encompass the conditions under which individuals are born, grow, live, work, and age, and the impact of these conditions on their overall health and well-being. These determinants include various factors such as income, education, employment, housing, and social support. Extensive research has consistently shown that social determinants of health significantly influence individuals' health outcomes, with those experiencing disadvantage in these areas being at a higher risk of poor health and chronic diseases. Understanding and addressing social determinants of health is crucial for improving population health overall and achieving health equity.",
+        "This project was collaboratively developed with colleagues from my master's degree program, aiming to synthesize this data into an easily accessible website. Our objective was to demonstrate the disparities in opportunities across different areas of the United States.",
+        "For this project, we selected two primary datasets: one focusing on Social Determinants of Health and the other on health outcomes. Both datasets were collected at the census tract level, which represents statistical subdivisions of a county and can be updated by local participants before each decennial census. Census tracts offer a smaller level of granularity compared to zip codes, enabling us to highlight significant differences even within relatively close geographical areas. We joined the data based on the census tract to establish correlations between Social Determinants of Health and health outcomes.",
+        "To build the project, we utilized MySQL as our SQL database. The front end was developed using React, while the back end was constructed with Nodejs. We incorporated the MUI JavaScript library, as well as Leaflet and Leaflet-react, which allowed us to visualize GeoJSON data on a map. These tools and technologies formed the foundation of our project, enabling us to present the information effectively and create meaningful visualizations.",
+        "I'm currently working on the base code to be able to showcase it in my portfolio. Please check back at a later time to see the latest changes and updates.",
+      ],
+      link: "",
+      image: sdohMain,
+      photos: [
+        {
+          label: 'Main',
+          image: sdohMain,
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: "Data Analyzer Program",
+      tags: ["Programming", "Java"],
+      preview: "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates.",
+      description: [
+        "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates.",
+      ],
+      link: "",
+      image: "https://fakeimg.pl/200x100?text=Image+not+available",
+      photos: [],
+    },
+    {
+      id: 4,
       title: "Shake it!",
       tags: ["HTML/CSS", "JavaScript", "Nodejs", "Programming", "React"],
       preview: "This project showcases my web development skills and passion for mixology. It's a dedicated website featuring a variety of cocktail recipes, ingredients, and food pairings.",
@@ -103,44 +136,12 @@ export const PROJECTS = [
       ],
     },
     {
-      id: 3,
-      title: "Social Health Insights",
-      tags: ["HTML/CSS", "JavaScript", "MySQL", "Nodejs", "Programming", "React"],
-      preview: "This collaborative project focused on synthesize Social Determinants of Health data and health outcomes into an easily accessible website, showing disparities in opportunities across different areas of the United States.",
-      description: [
-        "Social Determinants of Health encompass the conditions under which individuals are born, grow, live, work, and age, and the impact of these conditions on their overall health and well-being. These determinants include various factors such as income, education, employment, housing, and social support. Extensive research has consistently shown that social determinants of health significantly influence individuals' health outcomes, with those experiencing disadvantage in these areas being at a higher risk of poor health and chronic diseases. Understanding and addressing social determinants of health is crucial for improving population health overall and achieving health equity.",
-        "This project was collaboratively developed with colleagues from my master's degree program, aiming to synthesize this data into an easily accessible website. Our objective was to demonstrate the disparities in opportunities across different areas of the United States. I took the base code and made some modifications to be able to showcase it in my portfolio.",
-        "For this project, we selected two primary datasets: one focusing on Social Determinants of Health and the other on health outcomes. Both datasets were collected at the census tract level, which represents statistical subdivisions of a county and can be updated by local participants before each decennial census. Census tracts offer a smaller level of granularity compared to zip codes, enabling us to highlight significant differences even within relatively close geographical areas. We joined the data based on the census tract to establish correlations between Social Determinants of Health and health outcomes.",
-        "To build the project, we utilized MySQL as our SQL database. The front end was developed using React, while the back end was constructed with Nodejs. We incorporated the MUI JavaScript library, as well as Leaflet and Leaflet-react, which allowed us to visualize GeoJSON data on a map. These tools and technologies formed the foundation of our project, enabling us to present the information effectively and create meaningful visualizations.",
-      ],
-      link: "",
-      image: sdohMain,
-      photos: [
-        {
-          label: 'Main',
-          image: sdohMain,
-        },
-      ],
-    },
-    {
-      id: 4,
-      title: "Data Analyzer Program",
-      tags: ["Programming", "Java"],
-      preview: "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
-      description: [
-        "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
-      ],
-      link: "",
-      image: "https://fakeimg.pl/200x100?text=Image+not+available",
-      photos: [],
-    },
-    {
       id: 5,
       title: "Naval Clash Game",
       tags: ["Programming", "Java"],
-      preview: "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
+      preview: "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates.",
       description: [
-        "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates. Your patience is greatly appreciated!",
+        "I'm currently working on this and making updates. Please check back at a later time to see the latest changes and updates.",
       ],
       link: "",
       image: "https://fakeimg.pl/200x100?text=Image+not+available",

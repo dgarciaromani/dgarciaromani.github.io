@@ -3,20 +3,19 @@ import { Link } from 'react-router-dom';
 import { Card, Container, CardContent, CardMedia, CardActions, Typography, Box, Button, Divider, Chip } from '@mui/material';
 
 export default function ProjectsCard({data}) {
-    const tallestCardHeight = Math.max(...data.map((data) => data.tags.length + 240 ));
     return (
         <Container>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', padding: '40px', gap: '20px', maxWidth: '345' }}>
                 {data.map((data) => (
-                    <Card key={data.id} variant="outlined" sx={{ width: 328, height: 'auto' }}>
+                    <Card key={data.id} variant="outlined" sx={{ width: 328, height: 'auto', display: 'flex', flexDirection: 'column' }}>
                         <CardMedia
                                 component="img"
                                 height="140px"
                                 image={data.image}
                                 alt={data.title}
                             />
-                        <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'top', paddingBottom: '0', height: tallestCardHeight }}>
-                            <Typography variant="h5" component="div" sx={{  color: 'background.default', fontWeight: 'bold' }}>
+                        <CardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingBottom: '0' }}>
+                            <Typography variant="h5" component="div" sx={{  color: 'background.default', fontWeight: 'bold', textAlign: 'center' }}>
                                 {data.title}
                             </Typography>
                             <Divider sx={{ width: '100%', margin: '10px 0' }} />
@@ -36,7 +35,7 @@ export default function ProjectsCard({data}) {
                                 {data.preview}
                             </Typography>
                         </CardContent>
-                        <CardActions style={{ justifyContent: 'center' }}>
+                        <CardActions sx={{ marginTop: 'auto', justifyContent: 'center' }}>
                             <Link to={`/projects/${data.id}`}>
                                 <Button size="small">Learn More</Button>
                             </Link>
@@ -48,7 +47,7 @@ export default function ProjectsCard({data}) {
                                 </Link>
                                 ) : (
                                 <Button size="small" disabled>
-                                    Code not available
+                                    Code
                                 </Button>
                             )}
                         </CardActions>
