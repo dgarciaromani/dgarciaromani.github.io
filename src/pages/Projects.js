@@ -22,6 +22,18 @@ export default function Projects() {
         return data.sort((a, b) => a.label.localeCompare(b.label));
     };
 
+    const initializeActiveFilter = () => {
+        const transformedData = Object.entries(TAGS).map(([key, label]) => ({
+            key: parseInt(key),
+            label,
+            active: false
+        }));
+        const sortedData = sortActiveFilter(transformedData);
+        setActiveFilter(sortedData);
+        setActiveFilterCount(0);
+        setShowMe(false);
+    };
+
     const handleDelete = (tag) => () => {
         setActiveFilter((activeFilter) =>
             activeFilter.map((chip) =>
@@ -47,18 +59,6 @@ export default function Projects() {
         const updatedFilterCount = activeFilterCount + 1;
         setActiveFilterCount(updatedFilterCount);
         setShowMe(true);
-    };
-
-    const initializeActiveFilter = () => {
-        const transformedData = Object.entries(TAGS).map(([key, label]) => ({
-            key: parseInt(key),
-            label,
-            active: false
-        }));
-        const sortedData = sortActiveFilter(transformedData);
-        setActiveFilter(sortedData);
-        setActiveFilterCount(0);
-        setShowMe(false);
     };
 
     const filteredProjects = activeFilter.some((tag) => tag.active)

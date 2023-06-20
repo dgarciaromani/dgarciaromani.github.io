@@ -26,13 +26,15 @@ export default function AboutSection({ sectionRef }) {
 
                     <Grid item xs={12} md={3} 
                         sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 1, md: 2 }, marginTop: { xs: '20px', md: '0' }}}>
-                        <img
-                            src={PHOTO}
-                            alt={NAME}
-                            width="300px"
-                            height="300px"
-                            style={{ borderRadius: '50%' }}
-                        />
+                        <Container >
+                            <img
+                                src={PHOTO}
+                                alt={NAME}
+                                width="300px"
+                                height="300px"
+                                style={{ borderRadius: '50%' }}
+                            />
+                        </Container>
                     </Grid>
                 </Grid>
                 <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', paddingTop: '20px' }}>

@@ -3,9 +3,7 @@ import { AppBar, Container, Toolbar, Typography, Menu, MenuItem, IconButton, Lis
 import { TypeAnimation } from 'react-type-animation';
 import { NavLink } from 'react-router-dom';
 import style from './styleComponents.module.css';
-import LocalDiningIcon from '@mui/icons-material/LocalDining';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
-import DragHandleIcon from '@mui/icons-material/DragHandle';
 import CloseIcon from '@mui/icons-material/Close';
 
 
@@ -48,7 +46,7 @@ export default function NavBar() {
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
-        setMenuIcon(<LocalDiningIcon sx={{ fontSize: 40 }} />);
+        setMenuIcon(<CloseIcon sx={{ fontSize: 40 }} />);
     };
 
     const handleClose = () => {

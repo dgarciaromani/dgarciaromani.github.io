@@ -1,28 +1,33 @@
 import React from "react";
 import { Container, Box, Button, Grid, TextField, Divider } from '@mui/material';
 
+const config = require('../config.json');
+
 export default function Contact() {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
     const [message, setMessage] = React.useState("");
 
-    function encode(data) {
-        return Object.keys(data)
-            .map(
-            (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-            )
-            .join("&");
-    }
-
     function handleSubmit(e) {
         e.preventDefault();
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message }),
+
+        fetch(`http://${config.server_host}:${config.server_port}/contact`, { //Backend URL
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message })
         })
-            .then(() => alert("Message sent!"))
-            .catch((error) => alert(error));
+            .then(response => {
+                console.log(response);
+                if (response.ok) {
+                    alert("Message sent!");
+                } else {
+                    throw new Error("An error occurred while sending the message.");
+                }
+            })
+            .catch(error => {
+                console.error(error);
+                alert("An error occurred while sending the message.");
+            });
     }
 
     return (

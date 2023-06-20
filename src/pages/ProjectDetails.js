@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { Box, Container, Divider, Chip, Grid, Button, ImageList, ImageListItem } from '@mui/material';
+import { Box, Container, Divider, Chip, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { PROJECTS } from '../data/ProjectsInfo';
 import PhotoCarousel from '../components/Carousel';

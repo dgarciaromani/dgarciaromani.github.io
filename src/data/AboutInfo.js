@@ -16,10 +16,6 @@ import linkedinIconWhite from "../images/social_icons/linkedin_white.png";
 import linkedinIconBlack from "../images/social_icons/linkedin_black.png";
 import linkedinIconGrey from "../images/social_icons/linkedin_grey.png";
 import linkedinIconGreen from "../images/social_icons/linkedin_green.png";
-import steamIconWhite from "../images/social_icons/steam_white.png";
-import steamIconBlack from "../images/social_icons/steam_black.png";
-import steamIconGrey from "../images/social_icons/steam_grey.png";
-import steamIconGreen from "../images/social_icons/steam_green.png";
 
 export const NAME = 'Daniela Garcia';
 
@@ -165,13 +161,5 @@ export const SOCIALMEDIA = [
         srcWhite: linkedinIconWhite,
         srcGrey: linkedinIconGrey,
         srcGreen: linkedinIconGreen,
-    },
-    {
-        name: 'Steam',
-        link: 'https://steamcommunity.com/id/danielagarcia9/',
-        srcBlack: steamIconBlack,
-        srcWhite: steamIconWhite,
-        srcGrey: steamIconGrey,
-        srcGreen: steamIconGreen,
     },
 ];
