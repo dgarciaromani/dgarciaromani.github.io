@@ -1,5 +1,7 @@
 # danielagarcia9.github.io
 
+Welcome to my personal website, a project born out of my interest in web development. From the very beginning, I was driven by the desire to create a platform that authentically represents who I am and demonstrates my proficiency in UX/UI design and web development, all while avoiding the use of pre-made templates. I took it upon myself to meticulously design and program this website from scratch, harnessing the power of React. Every aspect of this website has been carefully crafted to reflect my personal touch and unwavering commitment to detail.
+
 ## Resources used:
 - [React](https://react.dev/)
 - [MUI Components](https://mui.com/components/)
