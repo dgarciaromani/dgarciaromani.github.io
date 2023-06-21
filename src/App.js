@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter , Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from '@mui/material'
 import { createTheme } from "@mui/material/styles";
 import './App.css';
@@ -93,7 +93,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <BrowserRouter>
+      <HashRouter basename='/'>
         <NavBar />
         <ScrollToTop />
         <Routes>
@@ -102,7 +102,7 @@ function App() {
           <Route path="/projects/:id" element={<ProjectDetails />}/>         
           <Route path="/contact" element={<Contact />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter >
       <ScrollButton />
       <Footer />
     </ThemeProvider>
