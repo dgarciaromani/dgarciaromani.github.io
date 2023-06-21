@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const app = express();
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
@@ -47,7 +48,11 @@ app.post('/contact', (req, res) => {
     });
   });
 
-const SERVER_PORT = process.env.SERVER_PORT || 3001;
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+const SERVER_PORT = process.env.SERVER_PORT;
 app.listen(SERVER_PORT, () => {
   console.log(`Server started on port ${SERVER_PORT}`);
 });
