@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', `http://${process.env.HOST}`); // Frontend URL
+  res.setHeader('Access-Control-Allow-Origin', `http://${process.env.HOST}:${process.env.CLIENT_PORT}`); // Frontend URL
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   next();
