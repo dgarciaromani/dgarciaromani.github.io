@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>Ooops</title>
+
+    <style>
+      * {
+        transition: all 0.6s;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+          font-family: 'Roboto';
+          color: #F5F5F5;
+          margin: 0;    
+          height: 100vh;
+          background-color: #222629;
+      }
+
+      #main {
+          display: table;
+          width: 100%;
+          height: 100vh;
+          text-align: center;
+      }
+
+      .fof {
+          display: table-cell;
+          vertical-align: middle;
+      }
+
+      .fof h1 {
+          font-size: 50px;
+          display: inline-block;
+          padding-right: 12px;
+          animation: type .5s alternate infinite;
+      }
+
+      @keyframes type{
+          from{box-shadow: inset -3px 0px 0px #888;}
+          to{box-shadow: inset -3px 0px 0px transparent;}
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #86c232;
+        color: #222629;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+    	<div class="fof">
+        <h1>
+          Error 404
+        </h1>
+        <h2>
+          Oops! The page you are looking for does not exist.
+        </h2> 
+        <h2>
+          Please use the navigation bar to explore the website.
+        </h2>
+        <br>
+        <button onclick="goHome()">Go Back Home</button>
+        <script>
+          function goHome() {
+            window.location.href = '/';
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
