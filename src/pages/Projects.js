@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Box, Container, Divider, Chip, Paper, Button  } from '@mui/material';
+import { Box, Container, Divider, Chip, Paper, Button, Typography  } from '@mui/material';
 import ControlPointIcon from '@mui/icons-material/ControlPoint';
 import { styled } from '@mui/material/styles';
 import ProjectsCard from '../components/ProjectsCards';
@@ -108,7 +108,9 @@ export default function Projects() {
             <Container>
                 <h1>My Projects</h1>
                 <Divider />
-                <p>{DESCRIPTION}</p>
+                <Typography variant="body1" sx={{paddingTop: '20px', paddingBottom: '15px'}}>
+                    {DESCRIPTION}
+                </Typography>
             </Container>
             
             <Container>

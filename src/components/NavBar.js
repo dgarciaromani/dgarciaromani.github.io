@@ -33,13 +33,13 @@ export default function NavBar() {
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 700);
-    };
+        };
 
-    window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', handleResize);
 
-    return () => {
-        window.removeEventListener('resize', handleResize);
-    };
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     const open = Boolean(anchorEl);

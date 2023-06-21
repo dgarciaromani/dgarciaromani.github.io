@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Box, Button, Grid, Chip, Divider } from '@mui/material';
+import { Container, Box, Button, Grid, Chip, Divider, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import { NAME, PHOTO, DESCRIPTION, CV, INTROSKILLS, SKILLS, EDUCATION, INTERESTS } from '../data/AboutInfo';
@@ -57,7 +57,9 @@ export default function AboutSection({ sectionRef }) {
                         <Container>
                             <h1>Skills</h1>
                             <Divider />
-                            <p>{INTROSKILLS}</p>
+                            <Typography variant="body1" sx={{paddingTop: '20px', paddingBottom: '15px'}}>
+                                {INTROSKILLS}
+                            </Typography>
                         </Container> 
                     </Grid>
                 </Grid>
