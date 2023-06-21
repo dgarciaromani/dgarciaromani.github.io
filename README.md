@@ -7,7 +7,6 @@
 - [Sticky Footer](https://github.com/mui/material-ui/tree/v5.11.16/docs/data/material/getting-started/templates/sticky-footer)
 - [react-type-animation](https://react-type-animation.netlify.app/)
 - [React Material UI Carousel](https://learus.github.io/react-material-ui-carousel/)
-- [spa-github-pages](https://github.com/rafgraph/spa-github-pages)
 - [Devicon](https://devicon.dev/)
 - [Social Icons](https://www.iconfinder.com/iconsets/miu-black-social-2)
 - [Favicon generator](https://favicon.io/favicon-generator/)
