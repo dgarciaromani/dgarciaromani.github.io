@@ -37,10 +37,10 @@ export const PROJECTS = [
       id: 1,
       title: "My personal website",
       tags: [
-        "HTML/CSS", "JavaScript", "Nodejs", "Programming", "React"],
-      preview: "I have personally designed and programmed this website from scratch, utilizing React and Nodejs, as a platform to demonstrate my proficiency in UX/UI design and web development.",
+        "HTML/CSS", "JavaScript", "Programming", "React"],
+      preview: "I have personally designed and programmed this website from scratch, utilizing React, as a platform to demonstrate my proficiency in UX/UI design and web development.",
       description: [
-        "Welcome to my personal website, a project born out of my interest in web development. From the very beginning, I was driven by the desire to create a platform that authentically represents who I am and demonstrates my proficiency in UX/UI design and web development, all while avoiding the use of pre-made templates. I took it upon myself to meticulously design and program this website from scratch, harnessing the power of React and Node.js. Every aspect of this website has been carefully crafted to reflect my personal touch and unwavering commitment to detail. ",
+        "Welcome to my personal website, a project born out of my interest in web development. From the very beginning, I was driven by the desire to create a platform that authentically represents who I am and demonstrates my proficiency in UX/UI design and web development, all while avoiding the use of pre-made templates. I took it upon myself to meticulously design and program this website from scratch, harnessing the power of React. Every aspect of this website has been carefully crafted to reflect my personal touch and unwavering commitment to detail. ",
       ],
       link: "https://github.com/dgarciaromani/dgarciaromani.github.io",
       image: personalwebMain,

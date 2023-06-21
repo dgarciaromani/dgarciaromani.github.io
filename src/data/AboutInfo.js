@@ -139,7 +139,7 @@ export const INTERESTS = [
 
 export const SOCIALMEDIA = [
     {
-        name: 'Mail',
+        name: 'Email',
         link: 'mailto:dngarcia@seas.upenn.edu',
         srcBlack: mailIconBlack,
         srcWhite: mailIconWhite,
@@ -147,7 +147,7 @@ export const SOCIALMEDIA = [
         srcGreen: mailIconGreen,
     },
     {
-        name: 'Github',
+        name: 'GitHub',
         link: 'https://github.com/dgarciaromani',
         srcBlack: githubIconBlack,
         srcWhite: githubIconWhite,
@@ -155,7 +155,7 @@ export const SOCIALMEDIA = [
         srcGreen: githubIconGreen,
     },
     {
-        name: 'Linkedin',
+        name: 'LinkedIn',
         link: 'https://www.linkedin.com/in/dgarciaromani/?locale=en_US',
         srcBlack: linkedinIconBlack,
         srcWhite: linkedinIconWhite,
