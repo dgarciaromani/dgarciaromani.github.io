@@ -2,7 +2,7 @@
   "name": "danielagarcia9.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.dgarciaromani.com/",
+  "homepage": "https://www.dgarciaromani.com",
   "dependencies": {
     "@emotion/react": "^11.11.0",
     "@emotion/styled": "^11.11.0",
@@ -24,7 +24,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
