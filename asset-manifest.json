@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.720a8867.css",
-    "main.js": "/static/js/main.d42cd9a6.js",
+    "main.css": "/static/css/main.95f1dbb2.css",
+    "main.js": "/static/js/main.92d4c9ea.js",
     "static/js/787.eb6142c4.chunk.js": "/static/js/787.eb6142c4.chunk.js",
     "static/media/homepage_mobile.jpg": "/static/media/homepage_mobile.7132388d62d1ea566bcf.jpg",
     "static/media/homepage_full.jpg": "/static/media/homepage_full.6a067550814228e73d03.jpg",
@@ -28,12 +28,12 @@
     "static/media/Harvard.png": "/static/media/Harvard.ae1027027786d87645b7.png",
     "static/media/Penn.png": "/static/media/Penn.8d3b0ca26a585980228e.png",
     "index.html": "/index.html",
-    "main.720a8867.css.map": "/static/css/main.720a8867.css.map",
-    "main.d42cd9a6.js.map": "/static/js/main.d42cd9a6.js.map",
+    "main.95f1dbb2.css.map": "/static/css/main.95f1dbb2.css.map",
+    "main.92d4c9ea.js.map": "/static/js/main.92d4c9ea.js.map",
     "787.eb6142c4.chunk.js.map": "/static/js/787.eb6142c4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.720a8867.css",
-    "static/js/main.d42cd9a6.js"
+    "static/css/main.95f1dbb2.css",
+    "static/js/main.92d4c9ea.js"
   ]
 }
