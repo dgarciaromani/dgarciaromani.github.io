@@ -27,7 +27,7 @@ const NavText = ({ href, text, onClick }) => {
 
 export default function NavBar() {
     const [anchorEl, setAnchorEl] = useState(null);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
     const [menuIcon, setMenuIcon] = useState(<LocalCafeIcon sx={{ fontSize: 40 }} />);
 
     useEffect(() => {

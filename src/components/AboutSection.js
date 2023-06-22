@@ -12,7 +12,7 @@ export default function AboutSection({ sectionRef }) {
                     <Grid item xs={12} md={9} 
                         sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', order: { xs: 2, md: 1 }}}>
                         <Container>
-                            <Grid item xs={12} sx={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
+                            <Grid item xs={12} sx={{ display: 'flex', flexDirection: 'column' }}>
                                 <h1>About me</h1>
                                 <Divider />
                             </Grid>
@@ -25,7 +25,7 @@ export default function AboutSection({ sectionRef }) {
                     </Grid>
 
                     <Grid item xs={12} md={3} 
-                        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', order: { xs: 1, md: 2 }, marginTop: { xs: '20px', md: '0' }}}>
+                        sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', order: { xs: 1, md: 2 }, marginTop: { xs: '20px', md: '0' }}}>
                         <Container >
                             <img
                                 src={PHOTO}
@@ -42,7 +42,7 @@ export default function AboutSection({ sectionRef }) {
                         Check out my projects
                     </Button>
                     {CV ? (
-                        <Button variant="contained" component="a" href={CV} target="_blank" rel="noopener noreferrer">
+                        <Button variant="contained" component="Link" href={CV} target="_blank" rel="noopener noreferrer">
                             Download my CV
                         </Button>
                         ) : (

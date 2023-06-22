@@ -86,7 +86,7 @@
 }
 
 /* Mobile specific styles */
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .cover {
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(../images/homepage_mobile.jpg);
     }

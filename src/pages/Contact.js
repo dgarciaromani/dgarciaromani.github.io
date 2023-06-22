@@ -38,7 +38,7 @@ function a11yProps(index) {
 
 export default function Contact() {
     const [value, setValue] = React.useState(0);
-    const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 700);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
