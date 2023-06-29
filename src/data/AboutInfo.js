@@ -54,11 +54,8 @@ export const SKILLS = {
       Photoshop: 'devicon-photoshop-plain',
       Illustrator: 'devicon-illustrator-plain',
     },
-    'Cloud & Infrastructure': {
+    'Cloud & General Tools': {
       AWS: 'devicon-amazonwebservices-plain',
-      Docker: 'devicon-docker-plain',
-    },
-    'General Tools': {
       Git: 'devicon-git-plain',
       GitHub: 'devicon-github-original',
       LaTeX: 'devicon-latex-original',

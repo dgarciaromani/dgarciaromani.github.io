@@ -30,6 +30,29 @@ import myuc14 from "../images/projects/myuc/14.jpg";
 import myuc15 from "../images/projects/myuc/15.jpg";
 import myuc16 from "../images/projects/myuc/16.jpg";
 
+import battleshipMain from "../images/projects/battleship/main.jpg";
+import battleship1 from "../images/projects/battleship/1.jpg";
+import battleship2 from "../images/projects/battleship/2.jpg";
+
+import towerblasterMain from "../images/projects/towerblaster/main.jpg";
+import towerblaster1 from "../images/projects/towerblaster/1.jpg";
+import towerblaster2 from "../images/projects/towerblaster/2.jpg";
+import towerblaster3 from "../images/projects/towerblaster/3.jpg";
+import towerblaster4 from "../images/projects/towerblaster/4.jpg";
+
+import dataanalyzerMain from "../images/projects/twitterdataanalyzer/main.jpg";
+import dataanalyzer1 from "../images/projects/twitterdataanalyzer/1.jpg";
+import dataanalyzer2 from "../images/projects/twitterdataanalyzer/2.jpg";
+
+import phillyinsightsMain from "../images/projects/phillyinsights/main.jpg";
+import phillyinsights1 from "../images/projects/phillyinsights/1.jpg";
+import phillyinsights2 from "../images/projects/phillyinsights/2.jpg";
+import phillyinsights3 from "../images/projects/phillyinsights/3.jpg";
+import phillyinsights4 from "../images/projects/phillyinsights/4.jpg";
+import phillyinsights5 from "../images/projects/phillyinsights/5.jpg";
+import phillyinsights6 from "../images/projects/phillyinsights/6.jpg";
+
+
 export const DESCRIPTION = "Discover the projects that showcase my problem-solving skills and expertise. Here, I present a collection of challenges I've tackled and the solutions I've crafted. From building intuitive user interfaces to developing specific programs, these projects demonstrate my ability to overcome obstacles and deliver exceptional results. You can utilize the filters to narrow down projects based on the specific programming language or tool employed.";
 
 export const PROJECTS = [
@@ -77,21 +100,81 @@ export const PROJECTS = [
     },
     {
       id: 3,
-      title: "Data Analyzer Program",
+      title: "Philadelphia's 2020 Insights",
+      tags: ["Git/GitHub", "Programming", "Java"],
+      preview: "As part of my coursework, I collaborated with a classmate to design and develop a Java program capable of reading and parsing CSV and JSON files. The program extracted relevant information, performed calculations, and conducted analysis based on user input. This project provided me with valuable experience in software design, data analysis, and working with real-world datasets. It also allowed me to collaborate and share responsibilities with a partner.",
+      description: [
+        "As part of my Data Structures and Software Design course, I had the opportunity to work with a partner on a project that involved utilizing data from the OpenDataPhilly portal to develop an application for analyzing various aspects of Philadelphia. The data set we worked with covered different topics, such as COVID data, property data, and the 2020 populations of Philadelphia ZIP Codes.",
+        "The objective was to create a Java program capable of reading and parsing CSV and JSON files, extracting relevant information, and performing calculations and analysis based on user input. After loading all the input data, the program displays a menu of possible actions and prompts the user to specify the action to be performed, such as showing the total population for all ZIP Codes, the total vaccinations per capita for each ZIP Code on the specified date, the average market value for properties in a specified ZIP Code, the average total livable area for properties in a specified ZIP Code, and the total market value of properties per capita for a specified ZIP Code, among others.",
+        "The program takes four optional runtime arguments as input: the name of the COVID data file, the name of the property values file, the name of the population data file, and the name of the log file. When the program finishes reading and parsing the files and extracting relevant information, it prints the menu to the console so the user can select the action. With this input, the program then executes the action given by the user, prints the results, and displays the main menu again, awaiting the next input.",
+        "We designed a modular program using a 3-tier architecture, splitting the program into three subsystems: the data tier, which handles functionality related to storing and retrieving data; the logic tier, where the necessary calculations are performed; and the user interface tier, which interacts with the user. Additionally, we created different utility classes to bundle information to be passed between different tiers, a main class to create objects in the other tiers and establish their relationships (such as passing one object to the constructor of another and initializing the application through the user interface), and a logger class to record all user inputs and actions performed.",
+        "My teammate and I worked together on the overall design, but we divided our responsibilities. My teammate focused on the logic tier, where she handled the necessary calculations and data processing. On the other hand, I took charge of the data and user interface tier, managing tasks related to storing and retrieving data, as well as interacting with the user. This division of work allowed us to effectively utilize our strengths and skills while maintaining a cohesive approach to the project's development. Through close collaboration and mutual understanding, we successfully created a well-structured application.",
+        "This project provided us with valuable hands-on experience in working with real-world data sets, software design, and data analysis, as well as collaborating and dividing responsibilities on a large project.",
+      ],
+      link: "",
+      image: phillyinsightsMain,
+      photos: [
+        {
+          label: 'Main',
+          image: phillyinsightsMain,
+        },
+        {
+          label: 'Output',
+          image: phillyinsights1,
+        },
+        {
+          label: 'Output',
+          image: phillyinsights2,
+        },
+        {
+          label: 'Output',
+          image: phillyinsights3,
+        },
+        {
+          label: 'Output',
+          image: phillyinsights4,
+        },
+        {
+          label: 'Output',
+          image: phillyinsights5,
+        },
+        {
+          label: 'Logger',
+          image: phillyinsights6,
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: "Twitter Data Analyzer",
       tags: ["Programming", "Java"],
       preview: "As part of my coursework, I designed and developed a Java application that could identify flu-related tweets, determine their origin, and analyze the data using specific criteria. This project provided me with valuable experience in software design, utilizing a modular N-tier architecture and design patterns, data analysis, and working with real-world datasets.",
       description: [
         "As part of my Data Structures and Software Design course, I had the opportunity to work on a project that involved designing and developing a Java application for analyzing Twitter data related to the spread of infectious diseases, specifically the flu.",
         "The objective was to create an application that could analyze a collection of tweets, identify flu-related tweets based on specific criteria, and determine the States in which these tweets originated. The input data consisted of two formats: tab-separated text files (CSV) and JSON files. The program needed to automatically select the appropriate parser based on the file type. Additionally, a file containing the latitude and longitude of each State was provided to help determine the State of origin for each tweet.",
-        "I designed a modular program by using a 3-tier architecture, splitting up the program into three subsystems: the data tier, which handles functionality related to storing and retrieving data; the logic tier, where the necessary calculations are performed; and the user interface tier, which interacts with the user. Additionally, I created different utility classes to bundle information to be passed between different tiers and a main class to create objects in the other tiers and establish their relationships, such as passing one object to the constructor of another and initiallize te application through the user interface.",
+        "The program takes three runtime arguments as input: the name of the tweets input file, the name of the States input file, and the name of the log file. When the program finishes searching for 'flu tweets' and determining their locations, it prints the number of tweets per State to the console, with the state names listed in alphabetical order.",
+        "I designed a modular program by using a 3-tier architecture, splitting up the program into three subsystems: the data tier, which handles functionality related to storing and retrieving data; the logic tier, where the necessary calculations are performed; and the user interface tier, which interacts with the user. Additionally, I created different utility classes to bundle information to be passed between different tiers, a main class to create objects in the other tiers and establish their relationships (such as passing one object to the constructor of another and initialize the application through the user interface), and a logger class to record all the flu tweets identified.",
         "Overall, this project provided me valuable experience in software design, data analysis, and working with real-world data sets.",
       ],
       link: "",
-      image: "https://fakeimg.pl/200x100?text=Image+not+available",
-      photos: [],
+      image: dataanalyzerMain,
+      photos: [
+        {
+          label: 'Main',
+          image: dataanalyzerMain,
+        },
+        {
+          label: 'Output',
+          image: dataanalyzer1,
+        },
+        {
+          label: 'Logger',
+          image: dataanalyzer2,
+        },
+      ],
     },
     {
-      id: 4,
+      id: 5,
       title: "Shake it!",
       tags: ["HTML/CSS", "JavaScript", "Nodejs", "Programming", "React"],
       preview: "This project showcases my web development skills and passion for mixology. It's a dedicated website featuring a variety of cocktail recipes, ingredients, and food pairings.",
@@ -138,7 +221,7 @@ export const PROJECTS = [
       ],
     },
     {
-      id: 5,
+      id: 6,
       title: "Battleship Game",
       tags: ["Programming", "Java"],
       preview: "As part of my master's coursework, I created a Java version of Battleship. Players face off against the computer, aiming to sink ten randomly placed ships on a 10x10 ocean. This project helped me enhance my skills in object-oriented programming.",
@@ -149,27 +232,61 @@ export const PROJECTS = [
         "Through this project, I gained valuable experience in object-oriented programming, including inheritance and overriding, access modifiers, abstract classes, 2-dimensional array manipulation, and game logic implementation.",
       ],
       link: "",
-      image: "https://fakeimg.pl/200x100?text=Image+not+available",
-      photos: [],
+      image: battleshipMain,
+      photos: [
+        {
+          label: 'Main',
+          image: battleshipMain,
+        },
+        {
+          label: 'Gameplay 1',
+          image: battleship1,
+        }, 
+        {
+          label: 'Gameplay 2',
+          image: battleship2,
+        }, 
+      ],
     },
     {
-      id: 6,
+      id: 7,
       title: "Tower Blaster Game",
       tags: ["Programming", "Python"],
       preview: "As part of my master's coursework, I implemented a Python version of Tower Blaster,  a game where bricks are rearranged to form an increasing sequence. This project enhanced my Python skills and game development expertise.",
       description: [
         "As part of my Introduction to Software Development course, I implemented a Python version of the game Tower Blaster using PyCharm. Tower Blaster is a game where the player rearranges a group of bricks to create an increasing sequence. In this project, my task was to develop the game for a user versus computer scenario.",
-        "The game starts with a main pile of 60 bricks, numbered from 1 to 60, represented as a list. The objective is to arrange 10 bricks in ascending order in your own tower. At the beginning of the game, both the user and the computer are dealt 10 bricks from the main pile, following the convention of placing the bricks on top of each other. During the game, players take turns choosing a brick either from the discard pile (which is face up) or from the main pile (which is face down). The chosen brick is then placed in the player's tower, replacing an existing brick. If a brick is taken from the main pile and rejected, it is placed in the discard pile without affecting the player's tower.",
+        "The game starts with a main pile of 60 bricks, numbered from 1 to 60, represented as a list. The objective is to arrange 10 bricks in ascending order in your own tower. At the beginning of the game, both the user and the computer are dealt 10 bricks from the main pile, following the convention of placing the bricks on top of each other. During the game, players take turns choosing a brick either from the discard pile (which is face up) or from the main pile (which is face down). The chosen brick is then placed in the player's tower, replacing an existing brick. If a brick is taken from the main pile and rejected, it is placed in the discard pile without affecting the player's tower. The program utilizes the console to display the instructions, the different piles, and prompts the user for input.",
         "Another part of the project was to design the computer's strategy. In my case, I programmed the computer to take the top brick from the discard pile and place it in a specific section of the tower. The goal was to develop a strategy that ensures the computer doesn't always lose to a human player.",
         "To implement this project, I utilized different functions to create the main and discard piles, shuffle the bricks at the beginning of the game, check the availability of bricks in the main pile, and handle shuffling if necessary. I also implemented functions to determine if stability has been achieved in a tower, remove and return the top brick from a given pile, deal initial bricks to the user and the computer, add a brick to the discard pile, find and replace a brick in a tower, and implement the computer's decision-making process.",
         "Completing this project provided me with a deeper understanding of working with lists and tuples in Python, as well as enhanced my problem-solving skills and logical thinking in game development scenarios.",
       ],
       link: "",
-      image: "https://fakeimg.pl/200x100?text=Image+not+available",
-      photos: [],
+      image: towerblasterMain,
+      photos: [
+        {
+          label: 'Main',
+          image: towerblasterMain,
+        },
+        {
+          label: 'Gameplay 1',
+          image: towerblaster1,
+        }, 
+        {
+          label: 'Gameplay 2',
+          image: towerblaster2,
+        }, 
+        {
+          label: 'Gameplay 1',
+          image: towerblaster3,
+        }, 
+        {
+          label: 'Gameplay 2',
+          image: towerblaster4,
+        }, 
+      ],
     },
     {
-      id: 7,
+      id: 8,
       title: "My UC",
       tags: ["Figma", "UX/UI Design"],
       preview: "This project showcases my UX/UI skills applied to a tangible problem space. The app I designed is specifically tailored to address the everyday questions and concerns of university students by providing them with comprehensive information.",
