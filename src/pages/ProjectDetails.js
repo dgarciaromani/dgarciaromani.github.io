@@ -15,7 +15,8 @@ export default function ProjectDetails() {
     return (
         <Box sx={{ textAlign: 'center' }} >
             <Container>
-                <h1>{project.title}</h1>
+                <h1 style={{marginBottom: '0'}}>{project.title}</h1>
+                <h2 style={{marginTop: '0'}}>({project.year})</h2>
                 <Divider sx={{ width: '100%', margin: '10px 0' }} />
                     <Box sx={{ display: 'flex', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
                         {project.tags.map((tag, index) => (
