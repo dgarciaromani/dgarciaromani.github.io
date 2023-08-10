@@ -60,7 +60,7 @@ export const PROJECTS = [
       id: 1,
       title: "My personal website",
       tags: ["Git/GitHub", "HTML/CSS", "JavaScript", "Programming", "React"],
-      year: "2023",
+      year: "May 2023",
       preview: "I have personally designed and programmed this website from scratch, utilizing React, as a platform to demonstrate my proficiency in UX/UI design and web development.",
       description: [
         "Welcome to my personal website, a project born out of my interest in web development. From the very beginning, I was driven by the desire to create a platform that authentically represents who I am and demonstrates my proficiency in UX/UI design and web development, all while avoiding the use of pre-made templates. I took it upon myself to meticulously design and program this website from scratch, harnessing the power of React. Every aspect of this website has been carefully crafted to reflect my personal touch and unwavering commitment to detail. ",
@@ -82,8 +82,8 @@ export const PROJECTS = [
       id: 2,
       title: "Social Health Insights",
       tags: ["Git/GitHub", "HTML/CSS", "JavaScript", "MySQL", "Nodejs", "Programming", "React"],
-      year: "2023",
-      preview: "This collaborative project focused on synthesize Social Determinants of Health data and health outcomes into an easily accessible website, showing disparities in opportunities across different areas of the US. This project provided me with valuable hands-on experience in working with real-world data sets, web design, and data analysis, as well as collaborating and dividing responsibilities on a large project.",
+      year: "January-April 2023",
+      preview: "This collaborative project focused on synthesizing Social Determinants of Health data and health outcomes into an easily accessible website, showing disparities in opportunities across different areas of the US. This project provided me with valuable hands-on experience in working with real-world data sets, web design, and data analysis, as well as collaborating and dividing responsibilities on a large project.",
       description: [
         "Social Determinants of Health encompass the conditions under which individuals are born, grow, live, work, and age, and the impact of these conditions on their overall health and well-being. These determinants include various factors such as income, education, employment, housing, and social support. Extensive research has consistently shown that social determinants of health significantly influence individuals' health outcomes, with those experiencing disadvantage in these areas being at a higher risk of poor health and chronic diseases. Understanding and addressing social determinants of health is crucial for improving population health overall and achieving health equity.",
         "This project was collaboratively developed with colleagues from my master's degree program, aiming to synthesize this data into an easily accessible website. Our objective was to demonstrate the disparities in opportunities across different areas of the United States.",
@@ -105,7 +105,7 @@ export const PROJECTS = [
       id: 3,
       title: "Philadelphia's 2020 Insights",
       tags: ["Git/GitHub", "Programming", "Java"],
-      year: "2022",
+      year: "December 2022",
       preview: "As part of my coursework, I collaborated with a classmate to design and develop a Java program capable of reading and parsing CSV and JSON files. The program extracted relevant information, performed calculations, and conducted analysis based on user input. This project provided me with valuable experience in software design, data analysis, and working with real-world datasets. It also allowed me to collaborate and share responsibilities with a partner.",
       description: [
         "As part of my Data Structures and Software Design course, I had the opportunity to work with a partner on a project that involved utilizing data from the OpenDataPhilly portal to develop an application for analyzing various aspects of Philadelphia. The data set we worked with covered different topics, such as COVID data, property data, and the 2020 populations of Philadelphia ZIP Codes.",
@@ -152,7 +152,7 @@ export const PROJECTS = [
       id: 4,
       title: "Twitter Data Analyzer",
       tags: ["Programming", "Java"],
-      year: "2022",
+      year: "November 2022",
       preview: "As part of my coursework, I designed and developed a Java application that could identify flu-related tweets, determine their origin, and analyze the data using specific criteria. This project provided me with valuable experience in software design, utilizing a modular N-tier architecture and design patterns, data analysis, and working with real-world datasets.",
       description: [
         "As part of my Data Structures and Software Design course, I had the opportunity to work on a project that involved designing and developing a Java application for analyzing Twitter data related to the spread of infectious diseases, specifically the flu.",
@@ -182,7 +182,7 @@ export const PROJECTS = [
       id: 5,
       title: "Shake it!",
       tags: ["HTML/CSS", "JavaScript", "Nodejs", "Programming", "React"],
-      year: "2023",
+      year: "May 2023",
       preview: "This project showcases my web development skills and passion for mixology. It's a dedicated website featuring a variety of cocktail recipes, ingredients, and food pairings.",
       description: [
         "This application serves as the culmination of my efforts in CS50's Introduction to Computer Science course, where I demonstrate my expertise in web development while showcasing my passion for mixology.",
@@ -230,12 +230,12 @@ export const PROJECTS = [
       id: 6,
       title: "Battleship Game",
       tags: ["Programming", "Java"],
-      year: "2022",
+      year: "April 2022",
       preview: "As part of my master's coursework, I created a Java version of Battleship. Players face off against the computer, aiming to sink ten randomly placed ships on a 10x10 ocean. This project helped me enhance my skills in object-oriented programming.",
       description: [
         'As part of my Introduction to Software Development course, I had to create a Java version of the classic game Battleship using Eclipse. In this version, the player is up against the computer, which randomly places ten ships on a 10x10 "ocean." The goal is to sink all the ships using as few shots as possible. The game follows familiar rules, starting with a grid of dots representing the ocean and providing feedback on each shot, whether the player hits or misses. Different types of ships are included, such as battleships, cruisers, destroyers, and submarines, each with its own length and characteristics.',
         "The program utilizes the console to display instructions, the game board, and prompts the user for input (row and column to shoot). Once submitted, the computer provides feedback (hit or miss). When a ship is hit and sunk, the program provides information about the type of ship it was. After each shot, the computer redisplays the ocean with updated information.",
-        "To build this project, I divided it into several classes, including a main class for controlling the gameplay (creating instances), a class called Ocean, and an abstract class called Ship, with subclasses representing specific ship types. Additionally, I implemented methods for ship placement, shooting, sinking, and displaying the ocean. I also created JUnit test classes to ensure that the Ship and Ocean classes function correctly.",
+        "To build this project, I divided it into several classes, including a main class for controlling the gameplay (creating instances), a class called Ocean, and an abstract class called Ship, with subclasses representing specific ship types. Additionally, I implemented methods for ship placement, shooting, sinking, and displaying the ocean. I have also created JUnit test classes to ensure the correct functionality of the Ship and Ocean classes.",
         "Through this project, I gained valuable experience in object-oriented programming, including inheritance and overriding, access modifiers, abstract classes, 2-dimensional array manipulation, and game logic implementation.",
       ],
       link: "",
@@ -259,7 +259,7 @@ export const PROJECTS = [
       id: 7,
       title: "Tower Blaster Game",
       tags: ["Programming", "Python"],
-      year: "2022",
+      year: "February 2022",
       preview: "As part of my master's coursework, I implemented a Python version of Tower Blaster,  a game where bricks are rearranged to form an increasing sequence. This project enhanced my Python skills and game development expertise.",
       description: [
         "As part of my Introduction to Software Development course, I implemented a Python version of the game Tower Blaster using PyCharm. Tower Blaster is a game where the player rearranges a group of bricks to create an increasing sequence. In this project, my task was to develop the game for a user versus computer scenario.",
@@ -297,7 +297,7 @@ export const PROJECTS = [
       id: 8,
       title: "My UC",
       tags: ["Figma", "UX/UI Design"],
-      year: "2019",
+      year: "October-December 2019",
       preview: "This project showcases my UX/UI skills applied to a tangible problem space. The app I designed is specifically tailored to address the everyday questions and concerns of university students by providing them with comprehensive information.",
       description: [
         "As a student who personally experienced the challenges of finding information quickly and effectively at my university, I felt compelled to address these issues for future students. It was clear that many of us struggled to navigate through various webpages, social networks, and other resources just to access the information we needed. The lack of a centralized platform that could accommodate our mobile needs was a major pain point. That's why I embarked on the development of the 'My UC' app as my final project for the User Experience Design Certificate Course I did at Brainstation.",
