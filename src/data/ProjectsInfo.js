@@ -11,6 +11,29 @@ import shakeit6 from "../images/projects/shakeit/6.jpg";
 import shakeit7 from "../images/projects/shakeit/7.jpg";
 
 import sdohMain from "../images/projects/sdoh/main.jpg";
+import sdoh1 from "../images/projects/sdoh/1.jpg";
+import sdoh2 from "../images/projects/sdoh/2.jpg";
+import sdoh3 from "../images/projects/sdoh/3.jpg";
+import sdoh4 from "../images/projects/sdoh/4.jpg";
+import sdoh5 from "../images/projects/sdoh/5.jpg";
+import sdoh6 from "../images/projects/sdoh/6.jpg";
+import sdoh7 from "../images/projects/sdoh/7.jpg";
+import sdoh8 from "../images/projects/sdoh/8.jpg";
+import sdoh9 from "../images/projects/sdoh/9.jpg";
+import sdoh10 from "../images/projects/sdoh/10.jpg";
+import sdoh11 from "../images/projects/sdoh/11.jpg";
+import sdoh12 from "../images/projects/sdoh/12.jpg";
+import sdoh13 from "../images/projects/sdoh/13.jpg";
+import sdoh14 from "../images/projects/sdoh/14.jpg";
+import sdoh15 from "../images/projects/sdoh/15.jpg";
+import sdoh16 from "../images/projects/sdoh/16.jpg";
+import sdoh17 from "../images/projects/sdoh/17.jpg";
+import sdoh18 from "../images/projects/sdoh/18.jpg";
+import sdoh19 from "../images/projects/sdoh/19.jpg";
+import sdoh20 from "../images/projects/sdoh/20.jpg";
+import sdoh21 from "../images/projects/sdoh/21.jpg";
+import sdoh22 from "../images/projects/sdoh/22.jpg";
+import sdoh23 from "../images/projects/sdoh/23.jpg";
 
 import myucMain from "../images/projects/myuc/main.jpg";
 import myuc1 from "../images/projects/myuc/1.jpg";
@@ -52,14 +75,13 @@ import phillyinsights4 from "../images/projects/phillyinsights/4.jpg";
 import phillyinsights5 from "../images/projects/phillyinsights/5.jpg";
 import phillyinsights6 from "../images/projects/phillyinsights/6.jpg";
 
-
 export const DESCRIPTION = "Discover the projects that showcase my problem-solving skills and expertise. Here, I present a collection of challenges I've tackled and the solutions I've crafted. From building intuitive user interfaces to developing specific programs, these projects demonstrate my ability to overcome obstacles and deliver exceptional results. You can utilize the filters to narrow down projects based on the specific programming language or tool employed.";
 
 export const PROJECTS = [
     {
       id: 1,
       title: "My personal website",
-      tags: ["Git/GitHub", "HTML/CSS", "JavaScript", "Programming", "React"],
+      tags: ["Git/GitHub", "HTML/CSS", "JavaScript", "Programming", "React", "UX/UI Design"],
       year: "May 2023",
       preview: "I have personally designed and programmed this website from scratch, utilizing React, as a platform to demonstrate my proficiency in UX/UI design and web development.",
       description: [
@@ -88,16 +110,107 @@ export const PROJECTS = [
         "Social Determinants of Health encompass the conditions under which individuals are born, grow, live, work, and age, and the impact of these conditions on their overall health and well-being. These determinants include various factors such as income, education, employment, housing, and social support. Extensive research has consistently shown that social determinants of health significantly influence individuals' health outcomes, with those experiencing disadvantage in these areas being at a higher risk of poor health and chronic diseases. Understanding and addressing social determinants of health is crucial for improving population health overall and achieving health equity.",
         "This project was collaboratively developed with colleagues from my master's degree program, aiming to synthesize this data into an easily accessible website. Our objective was to demonstrate the disparities in opportunities across different areas of the United States.",
         "For this project, we selected two primary datasets: one focusing on Social Determinants of Health and the other on health outcomes. Both datasets were collected at the census tract level, which represents statistical subdivisions of a county and can be updated by local participants before each decennial census. Census tracts offer a smaller level of granularity compared to zip codes, enabling us to highlight significant differences even within relatively close geographical areas. We joined the data based on the census tract to establish correlations between Social Determinants of Health and health outcomes.",
-        "To build the project, we utilized MySQL as our SQL database. The front end was developed using React, while the back end was constructed with Nodejs. We incorporated the MUI JavaScript library, as well as Leaflet and Leaflet-react, which allowed us to visualize GeoJSON data on a map. These tools and technologies formed the foundation of our project, enabling us to present the information effectively and create meaningful visualizations.",
-        "This project provided me with valuable hands-on experience in working with real-world data sets, web design, and data analysis, as well as collaborating and dividing responsibilities on a large project.",
-        "I'm currently working on the base code to be able to showcase it in my portfolio. Please check back at a later time to see the latest changes and updates.",
+        "To build the project, we utilized MySQL as our SQL database. Originally, the database was hosted on AWS RDS, but I changed the code so it would work on a local instance of MySQL 8. The front end was developed using React, while the back end was constructed with Nodejs. We incorporated the MUI JavaScript library, as well as Leaflet and Leaflet-react, which allowed us to visualize GeoJSON data on a map. These tools and technologies formed the foundation of our project, enabling us to present the information effectively and create meaningful visualizations.",
+        "This project provided me with valuable hands-on experience in working with real-world data sets, writing complex queries, optimization, web design, and data analysis, as well as collaborating and dividing responsibilities on a large project.",
       ],
-      link: "",
+      link: "https://github.com/dgarciaromani/Social-Health-Insights/",
       image: sdohMain,
       photos: [
         {
-          label: 'Main',
+          label: 'Homepage',
           image: sdohMain,
+        },
+        {
+          label: 'Homepage',
+          image: sdoh1,
+        },
+        {
+          label: 'Census Tract page',
+          image: sdoh2,
+        },
+        {
+          label: 'Census Tract page',
+          image: sdoh3,
+        },
+        {
+          label: 'Census Tract page',
+          image: sdoh4,
+        },
+        {
+          label: 'Tract Data page',
+          image: sdoh5,
+        },
+        {
+          label: 'Tract Data page',
+          image: sdoh6,
+        },
+        {
+          label: 'Compare Tracts page (percentile groups)',
+          image: sdoh7,
+        },
+        {
+          label: 'Compare Tracts page (percentile groups)',
+          image: sdoh8,
+        },
+        {
+          label: 'Compare Tracts page (percentile groups)',
+          image: sdoh9,
+        },
+        {
+          label: 'Compare Tracts page (percentile groups)',
+          image: sdoh10,
+        },
+        {
+          label: 'Compare Tracts page (percentile groups)',
+          image: sdoh11,
+        },
+        {
+          label: 'Compare Tracts page (percentile groups)',
+          image: sdoh12,
+        },
+        {
+          label: 'Compare Tracts page (raw numbers)',
+          image: sdoh13,
+        },
+        {
+          label: 'Compare Tracts page (raw numbers)',
+          image: sdoh14,
+        },
+        {
+          label: 'Compare Tracts page (raw numbers)',
+          image: sdoh15,
+        },
+        {
+          label: 'Health Outcomes page',
+          image: sdoh16,
+        },
+        {
+          label: 'Health Outcomes page',
+          image: sdoh17,
+        },
+        {
+          label: 'Health Outcomes page',
+          image: sdoh18,
+        },
+        {
+          label: 'Health Outcomes page',
+          image: sdoh19,
+        },
+        {
+          label: 'Health Outcomes page',
+          image: sdoh20,
+        },
+        {
+          label: 'Find States page',
+          image: sdoh21,
+        },
+        {
+          label: 'Find States page',
+          image: sdoh22,
+        },
+        {
+          label: 'Find States page',
+          image: sdoh23,
         },
       ],
     },
@@ -151,7 +264,7 @@ export const PROJECTS = [
     {
       id: 4,
       title: "Twitter Data Analyzer",
-      tags: ["Programming", "Java"],
+      tags: ["Programming", "Java", "JUnit"],
       year: "November 2022",
       preview: "As part of my coursework, I designed and developed a Java application that could identify flu-related tweets, determine their origin, and analyze the data using specific criteria. This project provided me with valuable experience in software design, utilizing a modular N-tier architecture and design patterns, data analysis, and working with real-world datasets.",
       description: [
@@ -183,11 +296,12 @@ export const PROJECTS = [
       title: "Shake it!",
       tags: ["HTML/CSS", "JavaScript", "Nodejs", "Programming", "React"],
       year: "May 2023",
-      preview: "This project showcases my web development skills and passion for mixology. It's a dedicated website featuring a variety of cocktail recipes, ingredients, and food pairings.",
+      preview: "This project showcases my web development skills and passion for mixology. It's a dedicated website featuring a variety of cocktail recipes, ingredients, and food pairings. Completing this project provided me with practical experience in web development and API integration.",
       description: [
-        "This application serves as the culmination of my efforts in CS50's Introduction to Computer Science course, where I demonstrate my expertise in web development while showcasing my passion for mixology.",
+        "This application serves as the culmination of my efforts in CS50's Introduction to Computer Science course, where I demonstrate my web development skills while showcasing my passion for mixology.",
         "This is a dedicated website that revolves around cocktails and drinks. Here, you can explore a wide variety of drink recipes and the necessary ingredients to make them. Alongside an extensive collection of cocktail recipes, I provide food pairing ideas to enhance the drinking experience.",
         "The development of this website involved the utilization of React for the frontend and Nodejs for the backend. To populate the content, I incorporated two different APIs: The Cocktail DB and The Meal DB, which offer free access at their basic level.",
+        "This project gave me practical experience in web development and API integration. Additionally, it enabled me to design various React components, contributing to the development of a modular and efficient application.",
       ],
       link: "https://github.com/dgarciaromani/Shake-it",
       image: shakeitMain,
@@ -229,7 +343,7 @@ export const PROJECTS = [
     {
       id: 6,
       title: "Battleship Game",
-      tags: ["Programming", "Java"],
+      tags: ["Programming", "Java", "JUnit"],
       year: "April 2022",
       preview: "As part of my master's coursework, I created a Java version of Battleship. Players face off against the computer, aiming to sink ten randomly placed ships on a 10x10 ocean. This project helped me enhance my skills in object-oriented programming.",
       description: [
@@ -298,10 +412,11 @@ export const PROJECTS = [
       title: "My UC",
       tags: ["Figma", "UX/UI Design"],
       year: "October-December 2019",
-      preview: "This project showcases my UX/UI skills applied to a tangible problem space. The app I designed is specifically tailored to address the everyday questions and concerns of university students by providing them with comprehensive information.",
+      preview: "This project showcases my UX/UI skills applied to a tangible problem space. The app I designed is specifically tailored to address the everyday questions and concerns of university students by providing them with comprehensive information. Completing this project offered me hands-on experience in applying the different phases of the UX design process.",
       description: [
         "As a student who personally experienced the challenges of finding information quickly and effectively at my university, I felt compelled to address these issues for future students. It was clear that many of us struggled to navigate through various webpages, social networks, and other resources just to access the information we needed. The lack of a centralized platform that could accommodate our mobile needs was a major pain point. That's why I embarked on the development of the 'My UC' app as my final project for the User Experience Design Certificate Course I did at Brainstation.",
         "This app aims to provide a solution by offering a user-friendly interface where students can easily access their class schedules, obtain information about their classes and fellow students, navigate campus using maps and directions, utilize library services, stay informed about events and news, and find information about safety and emergencies. Through extensive research, including user interviews and surveys, I gained valuable insights into the needs and preferences of university students. I used this information to create user personas, design the app's information architecture, and develop user flows and sketches. Rigorous testing and feedback allowed me to refine the wireframes and design a polished user interface using Figma.",
+        "This project provided me with valuable hands-on experience in applying the different phases of the UX design process to a tangible problem space.",
       ],
       link: "https://www.figma.com/proto/Mv8AHwTpqufKteyIiDmAe0/Project-%231?page-id=0%3A1&type=design&node-id=4-434&viewport=339%2C489%2C0.13&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1",
       image: myucMain,
