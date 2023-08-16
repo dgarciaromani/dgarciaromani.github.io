@@ -63,7 +63,7 @@ export default function NavBar() {
                             <a href="/" style={{ textDecoration: 'none', color: 'inherit', fontSize: '10px'  }}>
                                 <TypeAnimation
                                     sequence={[
-                                        'Daniela Garcia', 3000,
+                                        'Daniela Garcia-Romani', 3000,
                                         'Software Engineer', 2000,                                
                                         '', 500,
                                     ]}
@@ -78,7 +78,7 @@ export default function NavBar() {
                             <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <TypeAnimation
                                     sequence={[
-                                        'Daniela Garcia', 3000,
+                                        'Daniela Garcia-Romani', 3000,
                                         'Software Engineer', 2000,                                
                                         '', 500,
                                     ]}

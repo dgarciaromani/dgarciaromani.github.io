@@ -27,6 +27,7 @@ export default function HeroSection({ handleScrollToSection }) {
                             sequence={[
                                 'and I am a Software Engineer', 3000,
                                 'and I am an Organizational Psychologist', 3000,
+                                'and I am a Programmer', 3000,
                                 'and I am a UX/UI Designer', 3000,     
                                 'and I am a Photographer', 3000,
                             ]}

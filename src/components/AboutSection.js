@@ -42,7 +42,7 @@ export default function AboutSection({ sectionRef }) {
                         Check out my projects
                     </Button>
                     {CV ? (
-                        <Button variant="contained" component="Link" href={CV} target="_blank" rel="noopener noreferrer">
+                        <Button variant="contained" component={Link} to={CV} target="_blank" rel="noopener noreferrer">
                             Download my CV
                         </Button>
                         ) : (
