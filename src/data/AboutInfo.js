@@ -24,7 +24,7 @@ export const PHOTO = profilePic;
 export const DESCRIPTION = [
   `I am a Psychology Graduate with over 7 years of experience as an organizational development consultant in HR. My journey, alongside the insights gained from my professional background, has driven me to embark on a new career as a software engineer. This is why I am currently pursuing a master's degree in Computer and Information Technology (MCIT) at UPenn.`,
   `The MCIT program has enabled me to acquire a robust skill set in software engineering. Through intensive coursework, I have immersed myself in a comprehensive array of subjects, including mathematical foundations of computer science, data structures, software design, computer systems programming, algorithms, databases, and statistics for data science. This rigorous program has provided me with hands-on experience in building applications, enhancing my proficiency in languages such as Java, Python and C.`,
-  `In my former role as an consultant, I gained extensive experience in analyzing and improving organizational processes, fostering teamwork and collaboration, and understanding the bigger picture. This background has equipped me with strong analytical and problem-solving skills, as well as the ability to comprehend and adapt to the needs of different stakeholders. Moreover, I have a proven track record of consistently delivering successful outcomes aligned with organizational objectives.These skills serve as a strong foundation for my transition to a tech career.`,
+  `In my former role as an consultant, I gained extensive experience in analyzing and improving organizational processes, fostering teamwork and collaboration, and understanding the bigger picture. This background has equipped me with strong analytical and problem-solving skills, as well as the ability to comprehend and adapt to the needs of different stakeholders. Moreover, I have a proven track record of consistently delivering successful outcomes aligned with organizational objectives. These skills serve as a strong foundation for my transition to a tech career.`,
   `My passion for UX/UI design and photography complements my interest in software engineering. I firmly believe that a user-centered approach is crucial in creating software that not only meets functional requirements but also delivers a seamless and enjoyable user experience. Leveraging my understanding of human behavior and psychology, I aim to develop intuitive interfaces, conduct user research, and implement design principles that enhance usability and user satisfaction.`,
   `I consider myself a creative problem solver. I enjoy the challenge of understanding user needs and designing solutions that are not only functional but also aesthetically pleasing, as well as technically complex and efficient. With all the skills I've gained from my master's program and professional background, I am well-prepared to tackle complex challenges and deliver exceptional outcomes as a software engineer.`,
 ];
@@ -46,10 +46,11 @@ export const SKILLS = {
       React: 'devicon-react-original',
       Nodejs: 'devicon-nodejs-plain',
     },
-    'Databases': {
+    'Databases & Data Analysis': {
       MySQL: 'devicon-mysql-plain',
       MongoDB: 'devicon-mongodb-plain',
       Neo4j: 'devicon-neo4j-plain',
+      Pandas: 'devicon-pandas-original'
     },
     'Design Tools': {
       Figma: 'devicon-figma-plain',
