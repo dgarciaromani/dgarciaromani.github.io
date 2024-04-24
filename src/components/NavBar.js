@@ -6,6 +6,11 @@ import style from './styleComponents.module.css';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import CloseIcon from '@mui/icons-material/Close';
 
+const pages = {
+    'About': '/',
+    'Projects': '/projects',
+    'Contact': '/contact'
+}
 
 const NavText = ({ href, text, onClick }) => {
     return (
@@ -63,8 +68,7 @@ export default function NavBar() {
                             <a href="/" style={{ textDecoration: 'none', color: 'inherit', fontSize: '10px'  }}>
                                 <TypeAnimation
                                     sequence={[
-                                        'Daniela Garcia-Romani', 3000,
-                                        'Software Engineer', 2000,                                
+                                        'Daniela Garcia-Romani', 3000,                           
                                         '', 500,
                                     ]}
                                     speed={50}
@@ -78,8 +82,7 @@ export default function NavBar() {
                             <a href="/" style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <TypeAnimation
                                     sequence={[
-                                        'Daniela Garcia-Romani', 3000,
-                                        'Software Engineer', 2000,                                
+                                        'Daniela Garcia-Romani', 3000,                          
                                         '', 500,
                                     ]}
                                     speed={50}
@@ -115,28 +118,20 @@ export default function NavBar() {
                                     },
                                 }}
                             >
-                                <MenuItem onClick={handleClose} sx={{ justifyContent: 'flex-end' }}>
-                                    <ListItemIcon sx={{ color: '#F5F5F5' }}>
-                                        <NavText href='/' text='About' onClick={handleClose} />
-                                    </ListItemIcon>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose} sx={{ justifyContent: 'flex-end' }}>
-                                    <ListItemIcon sx={{ color: '#F5F5F5' }}>
-                                        <NavText href='/projects' text='Projects' onClick={handleClose} />
-                                    </ListItemIcon>
-                                </MenuItem>
-                                <MenuItem onClick={handleClose} sx={{ justifyContent: 'flex-end' }}>
-                                    <ListItemIcon sx={{ color: '#F5F5F5' }}>
-                                        <NavText href='/contact' text='Contact' onClick={handleClose} />
-                                    </ListItemIcon>
-                                </MenuItem>
+                                {Object.entries(pages).map(([pageName, pageLink]) => (
+                                    <MenuItem key={pageName} onClick={handleClose} sx={{ justifyContent: 'flex-end' }}>
+                                        <ListItemIcon sx={{ color: '#F5F5F5' }}>
+                                            <NavText href={pageLink} text={pageName} onClick={handleClose} />
+                                        </ListItemIcon>
+                                    </MenuItem>
+                                ))}
                             </Menu>
                         </>
                         ) : (
                         <>
-                            <NavText href='/' text='About' />
-                            <NavText href='/projects' text='Projects' />
-                            <NavText href='/contact' text='Contact' />
+                            {Object.entries(pages).map(([pageName, pageLink]) => (
+                                <NavText href={pageLink} text={pageName} />
+                            ))}
                         </>
                         )}
                     </Container>

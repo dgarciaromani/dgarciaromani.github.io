@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Box, Button, Grid, Chip, Divider, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 
-import { NAME, PHOTO, DESCRIPTION, CV, INTROSKILLS, SKILLS, EDUCATION, INTERESTS } from '../data/AboutInfo';
+import { NAME, PHOTO, DESCRIPTION, CV, INTROSKILLS, SKILLS, EDUCATION, INTERESTS, CERTIFICATIONS } from '../data/AboutInfo';
 
 export default function AboutSection({ sectionRef }) {
     return (
@@ -120,6 +120,32 @@ export default function AboutSection({ sectionRef }) {
                     </Grid>
 
                     <Grid item xs={12} md={5}
+                        sx={{ display: 'flex', flexDirection: 'column', order: { xs: 2, md: 1 }}}>
+                        <Container>
+                            <h1>Certifications</h1>
+                            <Divider />
+                            <Box sx={{ paddingTop: '20px' }}>
+                            {CERTIFICATIONS.map((item, index) => (
+                                <Grid container spacing={2} key={index} sx={{ marginBottom: '10px' }}>
+                                    <Grid item xs={1} md={1} sx={{ display: 'flex', justifyContent: 'center' }}>
+                                        <img
+                                            src={item.logo}
+                                            alt="Institution logo"
+                                            width={item.srcWidth ? item.srcWidth : "40px"}
+                                            height={item.srcHeight ? item.srcHeight : "40px"}
+                                        />
+                                    </Grid>
+                                    <Grid item xs={11} md={11}>
+                                        <h4 style={{ margin: 0 }}>{item.degree}</h4>
+                                        <p style={{ margin: 0 }}>{item.institution}</p>
+                                    </Grid>
+                                </Grid>
+                            ))}
+                            </Box>
+                        </Container>
+                    </Grid>
+
+                    <Grid item xs={12} md={12}
                         sx={{ display: 'flex', flexDirection: 'column', order: { xs: 2, md: 1 }}}>
                         <Container>
                             <h1>Interests</h1>
