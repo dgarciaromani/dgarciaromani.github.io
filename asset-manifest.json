@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.95f1dbb2.css",
-    "main.js": "/static/js/main.5868f28e.js",
+    "main.js": "/static/js/main.1ab2cab7.js",
     "static/js/787.6f61c765.chunk.js": "/static/js/787.6f61c765.chunk.js",
     "static/media/homepage_mobile.jpg": "/static/media/homepage_mobile.7132388d62d1ea566bcf.jpg",
     "static/media/homepage_full.jpg": "/static/media/homepage_full.6a067550814228e73d03.jpg",
@@ -32,15 +32,14 @@
     "static/media/22.jpg": "/static/media/22.5320dc8046d5665fd473.jpg",
     "static/media/21.jpg": "/static/media/21.76625ad1b1f6e33e1b1e.jpg",
     "static/media/23.jpg": "/static/media/23.04bce5bccd6737dd1422.jpg",
-    "static/media/Harvard.png": "/static/media/Harvard.ae1027027786d87645b7.png",
     "static/media/Penn.png": "/static/media/Penn.8d3b0ca26a585980228e.png",
     "index.html": "/index.html",
     "main.95f1dbb2.css.map": "/static/css/main.95f1dbb2.css.map",
-    "main.5868f28e.js.map": "/static/js/main.5868f28e.js.map",
+    "main.1ab2cab7.js.map": "/static/js/main.1ab2cab7.js.map",
     "787.6f61c765.chunk.js.map": "/static/js/787.6f61c765.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95f1dbb2.css",
-    "static/js/main.5868f28e.js"
+    "static/js/main.1ab2cab7.js"
   ]
 }
