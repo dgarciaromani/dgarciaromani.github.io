@@ -46,13 +46,22 @@ export default function ProjectDetails() {
                 {project.link ? (
                     <Link to={`${project.link}`} target="_blank" rel="noopener noreferrer">
                         <Button>
-                            {project.tags.includes("UX/UI Design") ? "Check out the prototype" : "Check out the code"}
+                            {project.tags.includes("Prototype") ? "Check out the prototype" : "Check out the code"}
                         </Button>
                     </Link>
                     ) : (
                     <Button disabled>
                         Code not available
                     </Button>
+                )}
+                {project.prototype ? (
+                    <Link to={`${project.prototype}`} target="_blank" rel="noopener noreferrer">
+                        <Button>
+                            Check out the prototype
+                        </Button>
+                    </Link>
+                    ) : (
+                    null
                 )}
             </Container> 
         </Box>

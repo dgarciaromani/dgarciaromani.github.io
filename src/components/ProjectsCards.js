@@ -42,7 +42,7 @@ export default function ProjectsCard({data}) {
                             {data.link ? (
                                 <Link to={`${data.link}`} target="_blank" rel="noopener noreferrer">
                                     <Button size="small">
-                                        {data.tags.includes("Figma") ? "Prototype" : "Code"}
+                                        {data.tags.includes("Prototype") ? "Prototype" : "Code"}
                                     </Button>
                                 </Link>
                                 ) : (

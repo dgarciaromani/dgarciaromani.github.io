@@ -103,7 +103,7 @@ export const PROJECTS = [
     {
       id: 7,
       title: "Social Health Insights",
-      tags: ["Git/GitHub", "HTML/CSS", "JavaScript", "MySQL", "Nodejs", "Programming", "React"],
+      tags: ["Figma", "Git/GitHub", "HTML/CSS", "JavaScript", "MySQL", "Nodejs", "Programming", "React"],
       year: "January-April 2023",
       preview: "This collaborative project focused on synthesizing Social Determinants of Health data and health outcomes (both datasets with more than 70,000 rows) into an easily accessible website, showing disparities in opportunities across different areas of the US. This project provided me with valuable hands-on experience in working with real-world data sets, web design, and data analysis, as well as collaborating and dividing responsibilities on a large project.",
       description: [
@@ -115,6 +115,7 @@ export const PROJECTS = [
       ],
       link: "https://github.com/dgarciaromani/Social-Health-Insights/",
       image: sdohMain,
+      prototype: "https://www.figma.com/proto/TYet21DTYSyqbJweqhPkjv/Health-Website?page-id=0%3A1&type=design&node-id=1-2&viewport=238%2C246%2C0.19&t=YfPuw0J3cQlAoCNu-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design",
       photos: [
         {
           label: 'Homepage',
@@ -414,7 +415,7 @@ export const PROJECTS = [
     {
       id: 1,
       title: "My UC",
-      tags: ["Figma", "UX/UI Design"],
+      tags: ["Figma","Prototype", "UX/UI Design"],
       year: "October-December 2019",
       preview: "This project showcases my UX/UI skills applied to a tangible problem space. The app I designed is specifically tailored to address the everyday questions and concerns of university students by providing them with comprehensive information. Completing this project offered me hands-on experience in applying the different phases of the UX design process.",
       description: [
@@ -422,7 +423,7 @@ export const PROJECTS = [
         "This app aims to provide a solution by offering a user-friendly interface where students can easily access their class schedules, obtain information about their classes and fellow students, navigate campus using maps and directions, utilize library services, stay informed about events and news, and find information about safety and emergencies. Through extensive research, including user interviews and surveys, I gained valuable insights into the needs and preferences of university students. I used this information to create user personas, design the app's information architecture, and develop user flows and sketches. Rigorous testing and feedback allowed me to refine the wireframes and design a polished user interface using Figma.",
         "This project provided me with valuable hands-on experience in applying the different phases of the UX design process to a tangible problem space.",
       ],
-      link: "https://www.figma.com/proto/Mv8AHwTpqufKteyIiDmAe0/Project-%231?page-id=0%3A1&type=design&node-id=4-434&viewport=339%2C489%2C0.13&scaling=scale-down&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+      link: "https://www.figma.com/proto/Mv8AHwTpqufKteyIiDmAe0/Project-%231?page-id=0%3A1&type=design&node-id=130-11280&viewport=365%2C212%2C0.25&t=oNpQc88ksawDwaN1-1&scaling=scale-down&starting-point-node-id=1%3A2&mode=design",
       image: myucMain,
       photos: [
         {
@@ -495,7 +496,6 @@ export const PROJECTS = [
         },
         
       ],
-      prototype: '<iframe style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FMv8AHwTpqufKteyIiDmAe0%2FProject-%25231%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-434%26viewport%3D339%252C489%252C0.13%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2%26show-proto-sidebar%3D1" allowfullscreen />',
     },
 ];
 
