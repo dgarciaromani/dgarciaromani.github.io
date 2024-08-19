@@ -129,14 +129,14 @@ export const CERTIFICATIONS = [
 
 
 export const INTERESTS = [
+    "Coffee!",
     "Technology", 
     "UX/UI Design", 
     "Photography", 
     "Traveling", 
     "Biking",
     "Fine Arts", 
-    "Literature", 
-    "Coffee!"
+    "Literature"
 ];
 
 export const SOCIALMEDIA = [
