@@ -97,10 +97,10 @@ export default function Contact() {
                     </Box>
                     <TabPanel value={value} index={0}>
                         <Container sx={{paddingBottom: '20px'}}>
-                            I currently live in Philadelphia, a vibrant city with its own unique charm. However, I am open to the possibility of relocating in the future. I am always open to considering new opportunities that may come my way.
+                        I currently live in Washington, D.C., a dynamic city with a rich history and a diverse cultural scene. While I enjoy being based here, I am open to remote work opportunities that allow me to collaborate with teams across different locations.
                         </Container>
                         <Container sx={{ display: 'flex', justifyContent: 'center'}}>
-                            <iframe title="Location Map Now" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1564805.0121334733!2d-76.43639937654387!3d40.002644294463416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b7d8d4b54beb%3A0x89f514d88c3e58c1!2sPhiladelphia%2C%20PA!5e0!3m2!1sen!2sus!4v1687377712367!5m2!1sen!2sus" width="100%" height="450" style={{border:0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe title="Location Map Now" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d99370.15308095435!2d-77.09697652886622!3d38.893859154971246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20DC!5e0!3m2!1sen!2sus!4v1742253925252!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </Container>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
