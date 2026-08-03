@@ -78,7 +78,6 @@ import phillyinsights6 from "../images/projects/phillyinsights/6.jpg";
 export const DESCRIPTION = "Discover the projects that showcase my problem-solving skills and expertise. Here, I present a collection of challenges I've tackled and the solutions I've crafted. From building intuitive user interfaces to developing specific programs, these projects demonstrate my ability to overcome obstacles and deliver exceptional results. You can utilize the filters to narrow down projects based on the specific programming language or tool employed.";
 
 export const PROJECTS = [
-    
     {
       id: 8,
       title: "My personal website",
